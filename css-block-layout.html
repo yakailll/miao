@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+    <style>
+body {
+    margin: 0%;
+}
+div.c {
+  background-color: black;
+  margin: 0px;
+}
+
+div.c div {
+  color: white;
+  width: 600px;
+  margin: auto;
+}
+
+p.a {
+  width: 600px;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+section {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+section ul {
+  background-color: pink;
+  width: 180px;
+  height: 40px;
+  border: 3px solid;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 7.5px;
+}
+section ul:hover {
+  background-color: red;
+}
+section ul:nth-child(n+5):nth-child(-n+8) {
+  margin-left: 210px;
+}
+section ul:nth-child(n+9):nth-child(-n+12) {
+  margin-left: 420px;
+}
+section ul:nth-child(5) {
+  margin-top: -220px;
+}
+section ul:nth-child(9) {
+  margin-top: -220px;
+}
+
+main ul {
+  width: 600px;
+  margin: auto;
+  padding-left: 0px;
+  border-bottom: 1px solid;
+  border-bottom: dashed;
+}
+main ul:nth-child(5) {
+  border-bottom: none;
+}
+
+div.b {
+  margin-top: 1em;
+  background-color: #EE8AEE;
+  xheight: auto;
+}
+
+div.b div {
+  white-space: pre;
+  text-align: center;
+  xheight: 2em;
+  color: black;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+    </style>
+  
+  <div class="c">
+    <div>
+      hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果
+    </div>
+  </div>
+  
+  <p class="a">
+    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+  </p>
+  
+  <section>
+    <ul>宽180高40(包含边框)</ul>
+    <ul>水平间隙30px</ul>
+    <ul>垂直间隙15px</ul>
+    <ul>边框宽度3px</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+    <ul>产品</ul>
+  </section>
+  
+  <main>  
+    <ul>link</ul>
+    <ul>link</ul>
+    <ul>link</ul>
+    <ul>link</ul>
+    <ul>link</ul>
+  </main>
+  
+  <div class="b">
+    <div>©版权所有
+    本页所有布局均使用块元素</div>
+  </div>
+  
+</body>
+</html>
