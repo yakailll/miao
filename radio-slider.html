@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+
+<style>
+div img {
+  height: 150px;
+  width: 400px;
+  display: none;
+}
+
+input:checked + * + * + * + * + * + img {
+  display: block;
+}
+
+
+header {
+  position: relative;
+  width: 400px;
+  height: 150px;
+}
+
+input {
+  position: absolute;
+}
+
+input:nth-child(6) {
+  right: 0px;
+  bottom: 0px;
+}
+input:nth-child(5) {
+  right: 15px;
+  bottom: 0px;
+}
+input:nth-child(4) {
+  right: 30px;
+  bottom: 0px;
+}
+input:nth-child(3) {
+  right: 45px;
+  bottom: 0px;
+}
+input:nth-child(2) {
+  right: 60px;
+  bottom: 0px;
+}
+input:nth-child(1) {
+  right: 75px;
+  bottom: 0px;
+}
+
+
+/* 按钮与文字一一对应 */
+input {
+  display: none;
+}
+
+main {
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+  top: 130px;
+  color: rgb(0,0,0,0.3)
+}
+main label:hover {
+  color: black;
+}
+
+</style>
+
+<body>
+  <header>
+    <div>
+      <input type="radio" name="a" id="a1">
+      <input type="radio" name="a" id="a2">
+      <input type="radio" name="a" id="a3">
+      <input type="radio" name="a" id="a4">
+      <input type="radio" name="a" id="a5">
+      <input type="radio" name="a" id="a6">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a7bf1db599f9085541d6b50b1f43e592.jpg?w=2452&h=920" alt="">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d58a9193326fea48a9a771075f8c70bc.png?thumb=1&w=1839&h=690&f=webp&q=90" alt="">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/397f2569b126d8fba446b6bbf57ef771.jpg?thumb=1&w=1839&h=690&f=webp&q=90" alt="">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/75adf241f1461877ce838e1c1150f758.png?thumb=1&w=1839&h=690&f=webp&q=90" alt="">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3cf02c698274b4713cf203c92009f154.jpg?thumb=1&w=1839&h=690&f=webp&q=90" alt="">
+      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/07d8e00281221de5c5b619204179a474.png?thumb=1&w=1839&h=690&f=webp&q=90" alt="">
+    </div>
+  
+    <main>
+      <label for="a1">1</label>
+      <label for="a2">2</label>
+      <label for="a3">3</label>
+      <label for="a4">4</label>
+      <label for="a5">5</label>
+      <label for="a6">6</label>
+    </main>
+  </header>
+  
+  
+  
+
+</body>
+</html>

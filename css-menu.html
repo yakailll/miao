@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+    <style>
+* {
+  background-color: rgb(0,0,0,0.08);
+  box-shadow: inset 0 0 1px red;
+}
+body {
+  margin: 0px;
+  font-size: 0px;
+}
+
+ul.menu {
+  padding: 0px;
+  white-space: nowrap;
+}
+
+ul.menu li {
+  display: inline-block;
+}
+
+ul.menu li ul li {
+  display: none;
+}
+ul.menu li:hover ul li {
+  display: inline-block;
+}
+
+ul.menu li {
+  position: relative;
+}
+ul.menu li ul {
+  position: absolute;
+  padding: 0px;
+}
+
+/* 下面是设置样式 */
+ul.menu {
+  width: 300px;
+  margin: auto;
+}
+ul.menu li {
+  width: 60px;
+  margin: auto;
+  font-size: 16px;
+  text-align: center;
+}
+ul.menu li ul {
+  font-size: 0px;
+}
+ul.menu li:hover {
+  text-decoration: underline;
+}
+
+
+/* 下面是第三级菜单 */
+
+ul.menu li li {
+  position: relative;
+}
+ul.menu li ul li ul {
+  position: absolute;
+  display: none;
+}
+ul.menu li ul li:hover ul {
+  display: inline-block;
+}
+ul.menu li ul li ul {
+  top: 100%;
+  left: 0px;
+}
+    </style>
+  
+  <ul class="menu">
+    <li>水果
+      <ul>
+        <li>苹果
+          <ul>
+            <li>红富士</li>
+            <li>阿克苏</li>
+          </ul>
+        </li>
+        <li>香蕉</li>
+        <li>橘子</li>
+      </ul>
+    </li>
+    <li>蔬菜
+      <ul>
+        <li>白菜</li>
+        <li>菠菜</li>
+        <li>黄瓜</li>
+      </ul>
+    </li>
+    <li>粮油
+      <ul>
+        <li>面粉</li>
+        <li>豆油</li>
+        <li>大米</li>
+      </ul>
+    </li>
+    <li>日用
+      <ul>
+        <li>肥皂</li>
+        <li>牙刷</li>
+        <li>毛巾</li>
+      </ul>
+    </li>
+    <li>厨卫
+      <ul>
+        <li>案板</li>
+        <li>酱油</li>
+        <li>香醋</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
