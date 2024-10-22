@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  
+  <style>
+  * {
+  xbackground-color: rgb(0,0,0,0.08);
+  xbox-shadow: inset 0 0 1px red;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+section {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.a1 {
+  width: 170px;
+}
+.a2 {
+  width: calc(100% - 370px);
+  xflex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.a3 {
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 100px;
+  overflow: auto;
+}
+.a4 {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: auto;
+}
+.a1, .a3, .a4 {
+  min-width: 100px;
+  xmax-width: 170px;
+}
+header {
+  height: 100px;
+}
+main {
+  flex-grow: 1;
+}
+.a34 {
+  overflow: auto;
+  height: 100%;
+  width: 200px;
+  background-color: rgb(235,238,243);
+}
+
+/* 以下为.a1具体样式 */
+button {
+  background-color: rgb(76,146,249);
+  border: inset gold 2px;
+  font-size: small;
+}
+button:hover {
+  border: outset gold 2px;
+}
+input {
+  font-size: small;
+  color: rgb(0,0,0,0.5);
+  width:90px;
+}
+.a1 {
+  overflow: auto;
+  background-color: rgb(234,238,246);
+}
+.a1 h4 {
+  text-align: right;
+}
+.a1 ul {
+  background-color: rgb(185,205,233);
+  border-top: 2px solid;
+  padding: 0px;
+  text-indent: 40px;
+}
+.a1 ul a {
+  display: block;
+}
+.a1 ul a:hover {
+  background-color: rgb(96,157,191);
+  color: gold;
+  font-weight: bold;
+}
+
+
+/* 以下为.a2具体样式 */
+.a2 h4 {
+  text-indent: 20px;
+}
+.a2 div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.a2 div span {
+  background-color: rgb(233,239,242);
+  border: 1px solid gray;
+  border-radius: 20%;
+}
+
+  </style>
+  
+  <section>
+    <div class="a1">
+      <h4>Olad Se7en</h4>
+      <form action="www.baidu.com" target="_blank">
+        <input value="sublime" type="text">
+        <button>search</button>
+      </form>
+      <ul>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">7</a>
+        <a href="">8</a>
+        <a href="">9</a>
+        <a href="">10</a>
+        <a href="">11</a>
+        <a href="">12</a>
+        <a href="">13</a>
+        <a href="">14</a>
+        <a href="">15</a>
+        <a href="">16</a>
+        <a href="">17</a>
+        <a href="">18</a>
+        <a href="">19</a>
+        <a href="">20</a>
+        <a href="">21</a>
+        <a href="">22</a>
+        <a href="">23</a>
+        <a href="">24</a>
+        <a href="">25</a>
+        <a href="">26</a>
+        <a href="">27</a>
+        <a href="">28</a>
+        <a href="">29</a>
+        <a href="">30</a>
+        <a href="">31</a>
+        <a href="">32</a>
+        <a href="">33</a>
+        <a href="">34</a>
+        <a href="">35</a>
+        <a href="">36</a>
+        <a href="">37</a>
+        <a href="">38</a>
+        <a href="">39</a>
+        <a href="">40</a>
+        <a href="">41</a>
+        <a href="">42</a>
+        <a href="">43</a>
+        <a href="">44</a>
+        <a href="">45</a>
+        <a href="">46</a>
+        <a href="">47</a>
+        <a href="">48</a>
+        <a href="">49</a>
+        <a href="">50</a>
+      </ul>
+    </div>
+    <div class="a2">
+      <header>
+        <h4>Sublime</h4>
+        <div>
+          <span>Donate</span>
+          <span>Help</span>
+          <span>Setting</span>
+          <span>Tools</span>
+        </div>
+      </header>
+      <main>lorem</main>
+    </div>
+    <div class="a34">
+      <div class="a3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nisi maxime quasi temporibus. Dolor iure libero, unde tempora itaque possimus. Adipisci quaerat, quam fugit accusamus laborum sequi nesciunt inventore optio? ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolore necessitatibus nam esse. Illum delectus nemo hic assumenda deserunt? Sint accusamus atque quidem eveniet, soluta recusandae impedit, qui laborum tempora. ipsum dolor sit amet, consectetur adipisicing elit. Quod nam atque nemo ullam iure culpa provident itaque dignissimos quasi, suscipit ratione temporibus aut, ipsum hic, illum minima excepturi libero. Incidunt. ipsum dolor sit amet, consectetur adipisicing elit. Ab iste iusto, veniam eaque. Nostrum repudiandae dolorem provident laboriosam quaerat ex neque debitis rerum consectetur inventore. Laudantium accusantium animi quis assumenda.</div>
+      <div class="a4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magnam quam quidem. Incidunt facilis totam consequatur, assumenda culpa officia consequuntur. Minus temporibus, voluptatem quod veniam, ut molestiae aliquam repudiandae ipsam. ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore, aliquid tenetur laboriosam dolores cumque vero ipsa unde nesciunt quae vitae dolorem neque suscipit architecto laborum esse excepturi, reprehenderit, recusandae. ipsum dolor sit amet, consectetur adipisicing elit. Amet perspiciatis, ducimus architecto obcaecati adipisci repudiandae itaque aspernatur cum aliquam illo dolorum, quaerat veniam, quas! Ut quos corporis beatae asperiores assumenda. ipsum dolor sit amet, consectetur adipisicing elit. Sunt quaerat quia nostrum, eius quas! Deserunt, quae nihil molestias. Debitis consequatur tempora neque sequi voluptatibus reprehenderit provident eum assumenda, voluptatem nisi.</div>
+    </div>
+    
+  </section>
+
+</body>
+</html>
