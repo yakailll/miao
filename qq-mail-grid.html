@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+  <style>
+    * {
+      background-color: rgb(0,0,0,0.08);
+      box-shadow: inset 0 0 1px red;
+    }
+
+    html , body , section {
+      height: 100%;
+    }
+
+    section {
+      display: grid;
+      grid-template-rows: 100px calc(100% - 100px);
+      grid-template-columns: 100px calc(100% - 100px);
+    }
+
+    header {
+      grid-column: 1 / span 2;
+      overflow: scroll;
+      background-color: gray;
+    }
+    aside {
+      overflow: scroll;
+      background-color: pink;
+    }
+    main {
+      overflow: scroll;
+      background-color: silver;
+    }
+  </style>
+  
+  <section>
+    <header>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quasi, excepturi distinctio cupiditate a provident, earum nostrum blanditiis, rem ratione velit minus modi voluptatibus tempora repudiandae non veniam ipsam iusto? ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis velit nemo, pariatur unde nesciunt odit quos quisquam natus esse, sequi accusamus error corporis doloremque ad dolor ipsa tempora labore eaque.</header>
+    <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, nam commodi ea asperiores deserunt voluptates. Fugit veritatis, velit obcaecati, nulla nesciunt molestias maiores, temporibus inventore expedita tempora ullam asperiores, cum! ipsum dolor sit amet, consectetur adipisicing elit. Eius odio maxime nobis vitae error velit incidunt, commodi quisquam hic. Ipsam modi, minus doloribus laborum, distinctio sunt voluptas odio repellendus nihil! ipsum dolor sit amet, consectetur adipisicing elit. Non, consequatur magnam minima. Consectetur tempore sunt, maxime voluptas qui, dolore architecto dolorem id natus explicabo, saepe quasi placeat quas nesciunt dolor.</aside>
+    <main>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero quia maiores, quas aspernatur ducimus! Quod dolorem distinctio tempora esse earum maiores sit dolorum eligendi magnam fuga, voluptas deserunt quasi. ipsum dolor sit amet, consectetur adipisicing elit. Facere laboriosam nisi alias itaque nemo quo debitis, vel quod et dolor saepe fugit error officia soluta in vero cumque provident. Necessitatibus. ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus alias nulla quaerat ullam earum, numquam voluptas, sint vitae reiciendis obcaecati doloribus, doloremque commodi temporibus reprehenderit esse deleniti explicabo, saepe voluptatem. ipsum dolor sit amet, consectetur adipisicing elit. Ex laboriosam voluptate totam quaerat vero eveniet eius veritatis assumenda cupiditate aspernatur explicabo esse provident aperiam rem minima, aliquid delectus, ipsa, tempore. ipsum dolor sit amet, consectetur adipisicing elit. Id hic, dolor mollitia cumque deserunt eos placeat recusandae quis commodi provident modi, cum non iure, at. Porro, corporis dignissimos vel ducimus.</main>
+  </section>
+
+</body>
+</html>
