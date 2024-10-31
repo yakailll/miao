@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://sdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+  <style>
+/* 双向居中方案 */
+* {
+  background-color: rgb(0,0,0,0.08);
+  box-shadow: inset 0 0 1px red;
+}
+
+/* 下面这部分是为了给定span的父元素固定的宽高 */
+div {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* 
+1.
+定位 + 固定宽高
+子元素是固定宽高
+父元素宽高可以在一定范围内修改（一定范围是指：不能比子元素还小）
+父元素修改范围后，子元素不用更改仍然居中
+使用定位，给子元素周围设置距离
+*/
+.a1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  > span {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    inset: 0;
+    /* inset 为简写属性，对应于 top、right、bottom 和 left 属性 */
+  }
+}
+
+
+/* 
+2.
+flex弹性盒模型
+首先对父元素（容器）使用justify水平居中
+然后对子元素使用align垂直居中
+
+父元素（容器）水平居中后，子元素定不定高都可以
+不定高：元素内的内容撑起高度
+定高：bbb在子元素左上角
+*/
+.a2 {
+  display: flex;
+  justify-content: center;
+  > span {
+    align-self: center;
+  }
+}
+
+/* 
+3.
+grid网格布局
+只有一个item时，item所在的cell占满整个grid container，但是使用justify和align后子元素的高宽不再占满grid
+使用justify/align-content设置水平/垂直居中即可
+子元素可以不设置宽高
+*/
+.a3 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  > span {
+    xheight: 30px;
+    xwidth: 30px;
+  }
+}
+
+/* 
+4.
+table表格
+如果父元素display为table，子元素为table-cell的话，子元素只能垂直居中，不能水平居中
+父元素display设为table-cell，此时子元素也需要是块元素/行内块元素
+最后使用vertical-align:middle;让元素垂直居中，text-align:center;让元素水平居中
+
+子元素可以不设置宽高，则自动由内容撑起
+*/
+.a4 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  > span {
+    display: inline-block;
+  }
+}
+
+/* 
+5.
+2d/3d变换 + 定位
+父元素子元素宽高可以在一定范围内改变（因为使用的是百分比）
+首先使用定位 left: 50%;top: 50%; 使得子元素左上角在父元素原点
+然后使用平移 translate(-50%,-50%); 使得子元素原点在原来左上角的位置
+最终使得父子元素原点位置相同
+*/
+.a5 {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  > span {
+    xheight: 40px;
+    xwidth: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;  /* 百分比基于父元素 */
+    transform: translate(-50%,-50%);  /* 百分比基于元素自身 */
+  }
+}
+
+/* 
+6.
+行内布局
+首先父元素使用text-align: center;让子元素水平居中
+然后就是实现子元素的垂直居中：
+  给父元素的before一个宽高（高度为100%），通过vertical-align: middle;让其行内居中（前提：before的content的display为inline-block）
+  相当于before的中点在父元素垂直方向的中点上，而子元素也是行内中心对齐，二者互相对齐，即子元素垂直居中
+最后可以给before的width=0，隐藏起来
+
+子元素在没有应用vertical-align: middle;时，是与x基线对齐
+子元素应用后，fff与x中心对齐
+(vertical-align 本身是指行内盒子的垂直对齐方式)
+
+*/
+.a6 {
+  text-align: center;
+  &::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: red;
+    height: 100%;
+    width: 1px;
+  }
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    
+  }
+}
+  </style>
+  
+  <section>
+    <div class="a1">
+      <span>aaa</span>
+    </div>
+    <div class="a2">
+      <span>bbb</span>
+    </div>
+    <div class="a3">
+      <span>ccc</span>
+    </div>
+    <div class="a4">
+      <span>ddd</span>
+    </div>
+    <div class="a5">
+      <span>eee</span>
+    </div>
+    <div class="a6">
+      x<span>fff</span>
+    </div>
+  </section>
+
+</body>
+</html>
