@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <style type="text/tailwindcss">
+    input:checked + * + * + * + * + * + img {
+    display:block;
+    }
+
+    @font-face {
+        font-family: font-awesome;
+        src: url(./fontawesome-webfont.woff2);
+    }
+
+
+    i.shopping::before {
+        content:"\f07a";
+        font-family: font-awesome;
+        font-style: normal;
+    }
+        @media (width < 800px) {
+       #a1,#a2,#a3,#a4,#a5 {
+         display: hidden;
+       }
+     }
+
+
+    
+  </style>
+  
+  <section class="h-10 min-w-[1226px] bg-[#333333] ">
+    <div class="h-10 w-[1226px] mx-auto overflow=auto text-[#B0B0B0] align-middle">
+      <div class="float-start text-[0px] mt-[14px] ">
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://www.mi.com/">小米官网</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://www.mi.com/shop">小米商城</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://hyperos.mi.com/">小米澎湃OS</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://www.xiaomiev.com/">小米汽车</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://i.mi.com/">云服务</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://iot.mi.com/">loT</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://youpin.mi.com/">有品</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://xiaoai.mi.com/">小爱开放平台</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://www.mi.com/aptitude/list/?id=88">资质证照</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] " href="https://www.mi.com/aptitude/list/">协议规则</a>
+        <a class="h-10 blcok border-r border-[#424242] px-2 text-xs  hover:text-[#FFFFFF] relative group z-20" href="https://www.mi.com/appdownload/">
+          下载APP
+          <div class="hidden group-hover:block absolute h-[150px] w-[125px] top-[26px] bg-[#ffffff] ml-[594px] shadow-xl">
+            <img class="h-[90px] w-[90px] mx-auto mt-3" src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
+            <div class="text-black w-[125px] mt-4 text-center">小米商城APP</div>
+          </div>
+        </a>
+        <a class="h-10 blcok  px-2 text-xs  hover:text-[#FFFFFF]" href="">Select Location</a>
+      </div>
+      <div class="float-end bg-[#424242] h-10 px-4 text-xs pt-[14px] group hover:bg-white duration-700 hover:duration-0">
+        <div class="group-hover:text-[#FF6700] duration-700 group-hover:duration-0">
+            <i class="shopping"></i>
+            购物车</div>
+      </div>
+      <div class="float-end h-10 pt-[8px]  ">
+        <a class="text-xs inline-block px-2 hover:text-[#FFFFFF] border-r border-[#424242]" href="">登录</a>
+        <a class="text-xs inline-block px-2 hover:text-[#FFFFFF] border-r border-[#424242]" href="">注册</a>
+        <a class="text-xs inline-block px-2 hover:text-[#FFFFFF] " href="">消息通知</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  <div class="h-[60px]">
+    <section class="w-[1226px] mx-auto  ">
+      <div class="float-start">
+        <a class="" href="https://www.mi.com/">
+          <img class="h-[60px] my-[20px]" src="https://ts1.cn.mm.bing.net/th/id/R-C.ee7708b10ec398fc04f9b70ab87494ed?rik=XJhOLHf5Fx4JtQ&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f04-22%2f99603%2fwater_99603_698_698_.png&ehk=3%2fF%2fCyhWmO3E2UApIVMFGrHXSMMBahOMLq4Rr%2beVXE8%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </a>
+      </div>
+      <div class="float-end border border-[#E0E0E0] hover:border-[#B0B0B0] h-[50px] w-[302px] flex ml-[80px] box-border mt-6">
+        <form class="group h-[50px] w-[250px] " action="">
+          <input class="h-[50px] w-[250px] border focus-within:bg-[#FF6700] "  type="text">
+          <div class="hidden group-focus-within:block">
+            <ul class=" absolute whitespace-nowrap border border-[#FF6700] bg-[#ffffff] z-20">
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E6%89%8B%E6%9C%BA%E6%8D%A2%E6%96%B0">手机换新</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF9">小米手环9</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC">笔记本</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=Redmi%20K70%E8%87%B3%E5%B0%8A%E7%89%88">Redmi K70至尊版</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E9%97%A8%E9%94%81">门锁</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E7%83%AD%E6%B0%B4%E5%99%A8">热水器</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E6%99%BE%E8%A1%A3%E6%9E%B6">晾衣架</a></li>
+              <li class="py-2 hover:bg-[#FAFAFA] w-[250px]"><a href="https://www.mi.com/shop/search?keyword=%E5%85%85%E7%94%B5%E5%AE%9D">充电宝</a></li>
+            </ul>
+          </div>
+        </form>
+        <div class="h-[50px] w-[50px] bg-red">
+          <img class="h-[50px] w-[50px] hover:bg-[#FF6700]" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.wPnzKUdUAg1lq4uu8URMxwAAAA?w=167&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        </div>
+      </div>
+      <div class=" float-end text-[0px]">
+        <div class="relative group inline-block z-20 ">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700] " href="">
+          Xiaomi手机</a>
+            <div class="absolute hidden group-hover:block  h-[230px] border-t bg-[#ffffff] shadow-lg">
+              <div class="w-[1226px] h-[230px]">
+                <div class="inline-block w-[204px]">
+                  <a class="w-[204px]" href="https://www.mi.com/shop/buy?product_id=20181">
+                    <img class="w-[160px] h-[110px] border-r mx-auto mt-6 px-" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a8fec02d8edf2bc5d1ed975823465c6.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                  </a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-base" href="https://www.mi.com/shop/buy?product_id=20181">Xiaomi MIX Fold 4</a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-[#FF6700] text-base" href="https://www.mi.com/shop/buy?product_id=20181">8999元起</a>
+                </div>
+                <div class="inline-block w-[204px]">
+                  <a class="w-[204px]" href="https://www.mi.com/shop/buy?product_id=20419">
+                    <img class="w-[160px] h-[110px] border-r mx-auto mt-6 px-" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/851b0039398ebce5909ef54360b03d1a.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                  </a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-base" href="https://www.mi.com/shop/buy?product_id=20419">Xiaomi MIX Flip</a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-[#FF6700] text-base" href="https://www.mi.com/shop/buy?product_id=20419">5999元起</a>
+                </div>
+                <div class="inline-block w-[204px]">
+                  <a class="w-[204px]" href="https://www.mi.com/shop/buy?product_id=19752">
+                    <img class="w-[160px] h-[110px] border-r mx-auto mt-6 px-" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0dce5029e2367f3e70cd786cb192d04a.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                  </a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-base" href="https://www.mi.com/shop/buy?product_id=19752">Xiaomi Civi 4 Pro</a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-[#FF6700] text-base" href="https://www.mi.com/shop/buy?product_id=19752">2799元起</a>
+                </div>
+                <div class="inline-block w-[204px]">
+                  <a class="w-[204px]" href="https://www.mi.com/shop/buy?product_id=19683">
+                    <img class="w-[160px] h-[110px] border-r mx-auto mt-6 px-" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16cb4384a3d34bf7b480f3b9ce4f00a7.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                  </a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-base" href="https://www.mi.com/shop/buy?product_id=19683">Xiaomi 14 Ultra</a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-[#FF6700] text-base" href="https://www.mi.com/shop/buy?product_id=19683">5999元起</a>
+                </div>
+                <div class="inline-block w-[204px]">
+                  <a class="w-[204px]" href="https://www.mi.com/shop/buy?product_id=19288">
+                    <img class="w-[160px] h-[110px] border-r mx-auto mt-6 px-" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2714d55e6fe4db5e2981f82c5a6b710b.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                  </a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-base" href="https://www.mi.com/shop/buy?product_id=19288">Xiaomi 14 Pro</a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-[#FF6700] text-base" href="https://www.mi.com/shop/buy?product_id=19288">4599元起</a>
+                </div>
+                <div class="inline-block w-[204px]">
+                  <a class="w-[204px]" href="https://www.mi.com/shop/buy?product_id=19300">
+                    <img class="w-[160px] h-[110px] border-r mx-auto mt-6 px-" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/717290eeccdbc60c541c4d98985d3012.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                  </a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-base" href="https://www.mi.com/shop/buy?product_id=19300">Xiaomi 14</a>
+                  <a class="block w-[204px] h-[40px] m-auto text-center p-1 text-[#FF6700] text-base" href="https://www.mi.com/shop/buy?product_id=19300">3999元起</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="group relative inline-block z-10">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="">
+            Redmi手机</a>
+          <div>
+            <div class="hidden absolute group-hover:block w-[1226px] m-auto bg-[#ffffff] shadow-lg">
+              <div class="inline-block h-[230px] w-[204px]">
+                <a href="https://www.mi.com/shop/buy?product_id=20425">
+                  <img class="h-[110px] w-[160px] border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fa1b75b14fd41a5e1d98d25cbe6a1a89.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="text-base block text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20425">Redmi Note 14 Pro+</a>
+                <a class="text-base block text-center text-[#FF6700] h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20425">1899元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a href="https://www.mi.com/shop/buy?product_id=20419">
+                  <img class="h-[110px] w-[160px] border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/106529ca2a44569b3955198ac43b525b.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="text-base block text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20419">Redmi Note 14 Pro</a>
+                <a class="text-base block text-center text-[#FF6700] h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20419">1399元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a href="https://www.mi.com/shop/buy?product_id=20420">
+                  <img class="h-[110px] w-[160px] border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8681c417e99e914fdb10fe9657ee7f08.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="text-base block text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20420">Redmi Note 14 5G</a>
+                <a class="text-base block text-center text-[#FF6700] h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20420">1099元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a href="https://www.mi.com/shop/buy?product_id=20153">
+                  <img class="h-[110px] w-[160px] border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/409a54fc25b3a2f76790b045bed30a44.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="text-base block text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20153">Redmi K70 至尊版</a>
+                <a class="text-base block text-center text-[#FF6700] h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=20153">2499元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a href="https://www.mi.com/shop/buy?product_id=19835">
+                  <img class="h-[110px] w-[160px] border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2d2df29f703cb991f0425ef37ac1aa96.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="text-base block text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=19835">Redmi Turbo 3</a>
+                <a class="text-base block text-center text-[#FF6700] h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=19835">1649元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a href="https://www.mi.com/shop/buy?product_id=19541">
+                  <img class="h-[110px] w-[160px] border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e15d7d1f415b440172d0c6553c00247a.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="text-base block text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=19541">Redmi 13C 5G</a>
+                <a class="text-base block text-center text-[#FF6700] h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=19541">649元起</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="group relative inline-block z-10">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="">
+            电视</a>
+          <div>
+            <div class="hidden absolute group-hover:block w-[1226px] m-auto bg-[#ffffff] shadow-lg">
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=20549">
+                  <img class="h-[110px] w-[160px] border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3e9eafd588b3994ec7f370379ecd2f4.jpg?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base h-10 w-[204px] text-center" href="https://www.mi.com/shop/buy?product_id=20549">小米电视 S Pro 75 Mini LED 2025款</a>
+                <a class="block text-base h-10 w-[204px] text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=20549">6499元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19745">
+                  <img class="h-[110px] w-[160px] border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/300ebd5f0fa66a25a52da567134db676.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base h-10 w-[204px] text-center" href="https://www.mi.com/shop/buy?product_id=19745">小米电视 S Mini LED系列</a>
+                <a class="block text-base h-10 w-[204px] text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19745">3499元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=18264">
+                  <img class="h-[110px] w-[160px] border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59dba1732074d35c9258ef3bcca65624.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base h-10 w-[204px] text-center" href="https://www.mi.com/shop/buy?product_id=18264">小米电视S系列</a>
+                <a class="block text-base h-10 w-[204px] text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=18264">2799元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19891">
+                  <img class="h-[110px] w-[160px] border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a32280bcf272b9ee7cc03f01ff921db0.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base h-10 w-[204px] text-center" href="https://www.mi.com/shop/buy?product_id=19891">Redmi MAX100 2025款</a>
+                <a class="block text-base h-10 w-[204px] text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19891">8599元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=18416">
+                  <img class="h-[110px] w-[160px] border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a32280bcf272b9ee7cc03f01ff921db0.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base h-10 w-[204px] text-center" href="https://www.mi.com/shop/buy?product_id=18416">Redmi 智能电视 MAX85英寸</a>
+                <a class="block text-base h-10 w-[204px] text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=18416">4499元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19282">
+                  <img class="h-[110px] w-[160px] border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bdbe7f972404bbdac0dea1330b4f3677.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base h-10 w-[204px] text-center" href="https://www.mi.com/shop/buy?product_id=19282">Redmi A75 2025款</a>
+                <a class="block text-base h-10 w-[204px] text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19282">2799元</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="group relative inline-block z-10">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="">
+            笔记本</a>
+          <div>
+            <div class="hidden group-hover:block absolute w-[1226px] bg-[#ffffff] shadow-lg">
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=10050073">
+                  <img class="border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3a5d8336e401924d82e77c105bc90b8d.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=10050073">Redmi G Pro 游戏本 2024</a>
+                <a class="block text-base text-center h-10 w-[204px] text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=10050073">8499元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19715">
+                  <img class="border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b3442ea8432af37766b3a1f900348469.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=19715">Redmi Book Pro 14 2024</a>
+                <a class="block text-base text-center h-10 w-[204px] text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19715">4999元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19709">
+                  <img class="border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1f6a20434940961e37aa3ab8f956217.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=19709">Redmi Book Pro 16 2024</a>
+                <a class="block text-base text-center h-10 w-[204px] text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19709">6399元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=10050058">
+                  <img class="border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3f6c0ada0b42c98348d0c222c6e3a844.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=10050058">Redmi Book 16 2024</a>
+                <a class="block text-base text-center h-10 w-[204px] text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=10050058">3699元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=10050057">
+                  <img class="border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/998fe69710528d4744a50ded67ec05ef.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=10050057">Redmi Book 14 2024</a>
+                <a class="block text-base text-center h-10 w-[204px] text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=10050057">4299元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=10050045">
+                  <img class="border-r m-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be052059c621f4a2d2ad605d8dabe879.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 w-[204px]" href="https://www.mi.com/shop/buy?product_id=10050045">Redmi Book Pro 15 2023 锐龙版</a>
+                <a class="block text-base text-center h-10 w-[204px] text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=10050045">5299元</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="group relative inline-block z-10">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="">
+            平板</a>
+          <div>
+            <div class="hidden group-hover:block absolute w-[1226px] m-auto bg-[#ffffff] shadow-lg">
+              <div class="inline-block h-[230px] w-[204px] ">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19820">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8dd1013092765f219fb3f90a1076539.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=19820">Redmi Pad Pro</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19820">1399元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px] ">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19655">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02afd89b3e5ca18b30e73b4ff7a31893.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=19655">Xiaomi Pad 6S Pro 12.4</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19655">2649元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px] ">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19166">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/75f234c4bc74c6a3cc6b054b24a5a94c.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=19166">Redmi Pad SE</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19166">849元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px] ">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=19013">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dca0249868dc6938fda3f71baafe10db.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=19013">Xiaomi Pad 6 Max 14</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=19013">3499元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px] ">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=18333">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7097fe3a8afcc3b82cbbb6309e3090ce.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=18333">Xiaomi Pad 6 Pro</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=18333">2499元起</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px] ">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=18332">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a533fdb09c9e8d9e027ee7c1915ba815.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=18332">Xiaomi Pad 6</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=18332">1899元起</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="group relative inline-block z-10">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="">
+            家电</a>
+          <div>
+            <div class="hidden group-hover:block absolute w-[1226px] mx-auto bg-[#ffffff] shadow-lg">
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=15948">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/531efbd4fd88b64a94079436851f56f1.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block h-10 text-base text-center" href="https://www.mi.com/shop/buy?product_id=15948">米家冰箱对开门610L墨羽岩</a>
+                <a class="block h-10 text-base text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=15948">1999元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=16197">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/52c8cab6760eadd9e01871dfbf27817f.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block h-10 text-base text-center" href="https://www.mi.com/shop/buy?product_id=16197">米家冰箱 对开门536L 墨羽岩</a>
+                <a class="block h-10 text-base text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=16197">2099元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=15657">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/950767dbf6e63b853d39d413e97685a8.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block h-10 text-base text-center" href="https://www.mi.com/shop/buy?product_id=15657">新风空调 立式3匹</a>
+                <a class="block h-10 text-base text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=15657">5999元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=13143">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/80416c1c7040aabbafa527a6ea652948.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block h-10 text-base text-center" href="https://www.mi.com/shop/buy?product_id=13143">小米空调 1.5匹新1级能效</a>
+                <a class="block h-10 text-base text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=13143">2499元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/machine-drivehttps://www.mi.com/shop/buy?product_id=16585">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85009f514f7505825899635daeb761b0.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block h-10 text-base text-center" href="https://www.mi.com/machine-drivehttps://www.mi.com/shop/buy?product_id=16585">米家洗烘一体机 12kg</a>
+                <a class="block h-10 text-base text-center text-[#ff6700]" href="https://www.mi.com/machine-drivehttps://www.mi.com/shop/buy?product_id=16585">2399元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=16585">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b6361cf5069af62f4208ee326bd0e43.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block h-10 text-base text-center" href="https://www.mi.com/shop/buy?product_id=16585">米家冰柜 203L</a>
+                <a class="block h-10 text-base text-center text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=16585">799元</a>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div class="group relative inline-block z-10">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="">
+            路由器</a>
+          <div>
+            <div class="hidden group-hover:block absolute w-[1226px] mx-auto bg-[#ffffff] shadow-lg">
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/xiaomi-ax3000t">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b5de7ae24c438974939453553420f1a0.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/xiaomi-ax3000t">Xiaomi路由器AX3000T</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/xiaomi-ax3000t">159元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/xiaomi-routers/be-3600">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a8cc8ccb1c0e8cc58d96b7ec00df6634.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/xiaomi-routers/be-3600">Xiaomi路由器 BE3600</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/xiaomi-routers/be-3600">229元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/xiaomi-routers/6500pro">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2e4e053bd4dd41341ce8950ae1c3896d.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/xiaomi-routers/6500pro">Xiaomi路由器 BE6500 Pro</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/xiaomi-routers/6500pro">599元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/xiaomi-routers/be-5000">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/81f833a72b840274af1cf5931fb516f8.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/xiaomi-routers/be-5000">Xiaomi路由器 BE5000</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/xiaomi-routers/be-5000">279元</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/search?keyword=%E8%B7%AF%E7%94%B1">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2ddc6a2789c5f5ff78fa4ca1402417c8.png?thumb=1&w=160&h=110" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/search?keyword=%E8%B7%AF%E7%94%B1">查看全部</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/search?keyword=%E8%B7%AF%E7%94%B1">小米路由器</a>
+              </div>
+              <div class="inline-block h-[230px] w-[204px]">
+                <a class="" href="https://www.mi.com/shop/buy?product_id=8645">
+                  <img class="border-r mx-auto mt-6" src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/28efac56ef4c4942077dac7e30e8c624.jpg?thumb=1&w=160&h=110" alt="">
+                </a>
+                <a class="block text-base text-center h-10 " href="https://www.mi.com/shop/buy?product_id=8645">小米路由器 4C</a>
+                <a class="block text-base text-center h-10 text-[#ff6700]" href="https://www.mi.com/shop/buy?product_id=8645">79元</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inline-block">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="https://www.mi.com/service/">服务中心</a>
+        </div>
+        <div class="inline-block">
+          <a class="text-base inline-block h-[100px] px-4 py-[42px] hover:text-[#FF6700]" href="http://www.xiaomi.cn/">社区</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    <div class="w-[1226px] m-auto h-[460px] flex">
+      <div class="h-[460px] w-[234px] text-[#FFFFFF] absolute z-10 bg-[#A4A0A1]">
+        <div class="group relative h-[42px] hover:bg-[#FF6700] mt-[20px]">
+          <div class="float-left ml-4 mt-2">手机</div>
+          <div class="float-right mr-4 mt-2">></div>
+          <section class="hidden absolute group-hover:grid -top-[20px] left-[234px] bg-[#FFFFFF] text-[#333333] grid-cols-2 grid-rows-6 w-[530px] grid-flow-col h-[460px]">
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=xiaomimix%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb9e4a367f854221b60bb7b3b05e0173.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Xiaomi MIX系列</div>
+            </a>
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4041dfcbaa3166d1c247f5dd2613a76b.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Xiaomi 数字旗舰</div>
+            </a>
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=xiaomicivi%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8baabd4fc4255a2cf81636335b4cf0c1.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Xiaomi Civi系列</div>
+            </a>
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=redmiK%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/55b0ecc7cc8ab3714f311cc5df3bd0ae.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Redmi K系列</div>
+            </a>
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=Redmi%20Turbo%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e12d8f226458729f4c92063b09d4f0f2.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Redmi TurBO系列</div>
+            </a>
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=redminote%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a57303e8ac0d52a8b714a078cc35bfa1.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Redmi Note系列</div>
+            </a>
+            <a class="block w-[265px] h-[76px] px-[20px] py-[12px]" href="https://www.mi.com/shop/search?keyword=redmi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97">
+              <img class="float-left h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c15a3d1b4e8bf2af17e6b5ad5559cfcb.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="float-right w-[172px] h-10 hover:text-[#ff6700] content-center">Redmi 数字系列</div>
+            </a>
+          </section>
+        </div>
+        <div class="group relative h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">电视</div>
+          <div class="float-right mr-4 mt-2">></div>
+          <section class="hidden absolute group-hover:grid -top-[62px] left-[234px] bg-[#ffffff] grid-flow-col h-[460px] w-[530px] grid-rows-6 ">
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9130e19fd3d14426e6f21b933a6415bf.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">小米电视</div>
+            </div>
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fb29bd1fdc24747f29a1391842e7249b.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">小米电视</div>
+            </div>
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c2e3fdbf6fe7a13c06644f16c8dc8877.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">小米电视</div>
+            </div>
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/51f0324fcbf7ba74cba9b3f052a2c383.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">Redmi电视</div>
+            </div>
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4b477b5e44c1b9eb7d75c55f1c3f440.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">小米电视</div>
+            </div>
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/932b72abec0b476c741a85669009add9.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">Redmi电视</div>
+            </div>
+            <div class="h-[76px] w-[265px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/30508961963af8937ead2013b77b97fe.png?thumb=1&w=40&h=40&f=webp&q=90" alt="">
+              <div class="h-10 w-[142px] content-center hover:text-[#ff6700] text-[#333333]">Redmi电视</div>
+            </div>
+          </section>
+        </div>
+        <div class="group relative h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">家电</div>
+          <div class="float-right mr-4 mt-2">></div>
+          <section class="hidden bg-[#ffffff] group-hover:grid absolute left-[234px] -top-[104px] h-[460px] grid-flow-col grid-rows-6 h-[460px]">
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/630b9e523bb2e1387ce6c7be1edaca18.png?thumb=1&w=40&h=40" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]">壁挂空调</div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+            <div class="w-[265px] h-[76px] flex px-[20px] py-[12px]">
+              <img class="h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="h-10 w-[142px] content-center text-[#333333] hover:text-[#ff6700]"></div>
+            </div>
+          </section>
+        </div>
+        <div class="group relative h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">笔记本 平板 显示器</div>
+          <div class="float-right mr-4 mt-2">></div>
+          <section class="hidden absolute group-hover:grid grid-flow-col grid-rows-6 -top-[146px] left-[234px] bg-[#ffffff] text-[#333333] h-[460px]">
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px] " href="">
+              <img class="inline-block w-10 h-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Redmi平板/显示器</div>
+            </a>
+          </section>
+        </div>
+        <div class="group relative h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">出行 穿戴</div>
+          <div class="float-right mr-4 mt-2">></div>
+          <section class="hidden absolute group-hover:grid -top-[188px] left-[234px] bg-[#ffffff] text-[#333333] grid-flow-col grid-rows-6 h-[460px]">
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">Xiaomi手环/watch</div>
+            </a>
+          </section>
+        </div>
+        <div class="h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">耳机音箱</div>
+          <div class="float-right mr-4 mt-2">></div>
+        </div>
+        <div class="group relative h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">健康 儿童</div>
+          <div class="float-right mr-4 mt-2">></div>
+          <section class="hidden absolute group-hover:grid -top-[272px] left-[234px] bg-[#ffffff] text-[#333333] grid-flow-col grid-rows-6 h-[460px]">
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+            <a class="w-[265px] h-[76px] px-[20px] py-[12px]" href="">
+              <img class="inline-block h-10 w-10 mr-[12px]" src="" alt="">
+              <div class="inline-block">牙刷/吹风机</div>
+            </a>
+          </section>
+        </div>
+        <div class="h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">生活 箱包</div>
+          <div class="float-right mr-4 mt-2">></div>
+        </div>
+        <div class="h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">智能 路由器</div>
+          <div class="float-right mr-4 mt-2">></div>
+        </div>
+        <div class="h-[42px] hover:bg-[#FF6700]">
+          <div class="float-left ml-4 mt-2">电源 配件</div>
+          <div class="float-right mr-4 mt-2">></div>
+        </div>
+      </div>
+      <div class="h-[460px] w-[1226px] relative">
+        <input id="img1" class="absolute z-1 right-4 bottom-4"  name="lbt" type="radio">
+        <input id="img2" class="absolute z-1 right-8 bottom-4"  name="lbt" type="radio">
+        <input id="img3" class="absolute z-1 right-12 bottom-4"  name="lbt" type="radio">
+        <input id="img4" class="absolute z-1 right-16 bottom-4"  name="lbt" type="radio">
+        <input id="img5" class="absolute z-1 right-20 bottom-4"  name="lbt" type="radio">
+        <input id="img6" class="absolute z-1 right-24 bottom-4"  name="lbt" type="radio">
+        <img class="hidden h-[460px] w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fa1a601d2caef93a485360a8cf99b4d0.jpg?w=2452&h=920" alt="">
+        <img class="hidden h-[460px] w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a495821d4ee49d9cb751983ac6312394.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        <img class="hidden h-[460px] w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57a507debfa4beacad8c3ed155d221fb.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        <img class="hidden h-[460px] w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef645c0bc49d4dea74789898bf7340a1.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        <img class="hidden h-[460px] w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/963cefaca23ab80758b6e0c2f6b99810.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        <img class="hidden h-[460px] w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16a1f9eeb8633f1f74e21f0453a90aaf.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <section>
+    <div class="w-[1226px] mx-auto my-[14px] h-[170px] text-[0px]">
+      <div class="float-left">
+      <div class="h-[170px] w-[234px] bg-[#5F5750] text-base inline-grid grid-flow-col grid-rows-2 grid-cols-3 ">
+        <a class="inline-block w-[78px] h-[85px] before:content-['————'] before:text-[#665E57]" href="https://api.jr.mi.com/activity/scene/scenePCsearch.html?from=search">
+          <img class="h-6 w-6 justify-self-center mt-1"  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48" alt="">
+          <div class="text-sm text-[#CFCDCB] justify-self-center mt-[2px] hover:text-[#FFFFFF]">保障服务</div>
+        </a>
+        <a class="inline-block w-[78px] h-[85px] before:content-['————'] before:text-[#665E57]" href="https://10046.mi.com/">
+          <img class="h-6 w-6 justify-self-center mt-1" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48" alt="">
+          <div class="text-sm text-[#CFCDCB] justify-self-center mt-[2px] hover:text-[#FFFFFF]">米粉卡</div>
+        </a>
+        <a class="inline-block w-[78px] h-[85px] before:content-['————'] before:text-[#665E57]" href="https://business.qiye.mi.com/">
+          <img class="h-6 w-6 justify-self-center mt-1" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48" alt="">
+          <div class="text-sm text-[#CFCDCB] justify-self-center mt-[2px] hover:text-[#FFFFFF]">企业团购</div>
+        </a>
+        <a class="inline-block w-[78px] h-[85px] before:content-['————'] before:text-[#665E57]" href="https://www.mi.com/a/h/16769.html">
+          <img class="h-6 w-6 justify-self-center mt-1" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48" alt="">
+          <div class="text-sm text-[#CFCDCB] justify-self-center mt-[2px] hover:text-[#FFFFFF]">以旧换新</div>
+        </a>
+        <a class="inline-block w-[78px] h-[85px] before:content-['————'] before:text-[#665E57]" href="https://www.mi.com/order/fcode">
+          <img class="h-6 w-6 justify-self-center mt-1" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48" alt="">
+          <div class="text-sm text-[#CFCDCB] justify-self-center mt-[2px] hover:text-[#FFFFFF]">F码通道</div>
+        </a>
+        <a class="inline-block w-[78px] h-[85px] before:content-['————'] before:text-[#665E57]" href="https://recharge.10046.mi.com/">
+          <img class="h-6 w-6 justify-self-center mt-1" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48" alt="">
+          <div class="text-sm text-[#CFCDCB] justify-self-center mt-[2px] hover:text-[#FFFFFF]">话费充值</div>
+        </a>
+      </div>
+      </div>
+      <a class="inline-block" href="https://www.mi.com/shop/buy?product_id=10050081">
+        <img class="h-[170px] w-[316px] ml-[14px] hover:shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/13e510f97bb2b2f2ae210d05a3077fe7.png?w=632&h=340" alt="">
+      </a>
+      <a class="inline-block" href="https://www.mi.com/shop/buy?product_id=10050036">
+        <img class="h-[170px] w-[316px] ml-[14px] hover:shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dede2520f8dfff9c9b690af498cafe8.jpg?w=632&h=340" alt="">
+      </a>
+      <a class="inline-block" href="https://www.mi.com/xiaomibuds4pro">
+        <img class="h-[170px] w-[316px] ml-[14px] hover:shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1ac77590368ff636d0b4f6a988133f55.png?w=632&h=340" alt="">
+      </a>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+ <!-- 下面这个section是一个链接，里面有一张图片，w=1226px 居中 -->
+ <section class="bg-[#F5F5F5] my-[14px]">
+   <div class="w-[1226px] h-[120px] m-auto">
+     <a href="https://www.mi.com/shop/buy?product_id=10050081">
+       <img class="w-[1226px] h-[120px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8370d86c4fa1e4c1981c20e53c71b443.png?thumb=1&w=1226&h=120&f=webp&q=90" alt="">
+     </a>
+   </div>
+ </section>
+  
+  
+  <!-- 下面这个是上方的小文字 -->
+  <section class="bg-[#f5f5f5]">
+    <div class="w-[1226px] h-6 m-auto">
+      <div class="inline-block float-left">手机</div>
+      <a class="inline-block h-[24px] float-right text-xm hover:text-[#FF6700] duration-500 hover:duration-500 duration-500" href="https://www.mi.com/shop/search?keyword=%E6%89%8B%E6%9C%BA">
+          查看更多
+        <span class="inline-block mb-[2px] align-middle text-center w-[20px] h-[20px] bg-[#B0B0B0] text-[#ffffff] rounded-[50%] hover:bg-[#FF6700] duration-500 hover:duration-500"> > </span>
+      </a>
+    </div>
+  </section>
+  
+  
+  <!-- 1/7 使用block -->
+  <section class="bg-[#F5F5F5]">
+    <div class="w-[1226px] h-[614px] m-auto">  <!-- 这个div用来罩住里面的九个小div并使之居中 -->
+      <div class="h-[614px] w-[234px] mr-[14px] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=10050081">
+          <img class="w-[234px] h-[614px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/078f10e387b2c53d73e5104c2e2a123c.jpg?thumb=1&w=234&h=614&f=webp&q=90" alt="">
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[248px] -mt-[614px] mr-[14px] bg-[#ffffff] mb-[14px] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20618">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/089128152bd814096a99249a487e383d.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Xiaomi 15</div>
+            <div class="mx-[10px] mb-[10px]  overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">徕卡光学 Summilux 高速镜头｜骁龙®8至尊版移动平台｜5400mAh 小米金沙江电池 小米澎湃OS 2｜全生态AI助手 超级小爱｜低功耗超级阳光屏</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">4499元起</div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[248px] mr-[14px] bg-[#ffffff] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20419">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202409251507_d9b4ae236e3ee8b78cc5faaf706c71a3.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Redmi Note 14 Pro</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">天玑 7300-Ultra</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">1399元起 <span class="line-through text-[#B0B0B0]">1499元</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[496px] -mt-[614px] mr-[14px] bg-[#ffffff] mb-[14px] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20603">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5f4d5d4fa89236436e9d44e2b2e6ebac.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Xiaomi 15 Pro</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">徕卡光学 Summilux 高速镜头｜骁龙®8至尊版移动平台｜6100mAh 小米金沙江电池 120mm 徕卡潜望长焦 ｜小米澎湃OS 2｜全生态AI助手 超级小爱</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">5299元起</div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[496px] mr-[14px] bg-[#ffffff] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20153">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202407190938_6086b4a2d6895f3f00fe0cbd605239fa.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Redmi K70 至尊版</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">性能魔王 全面进化</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">2499元起 <span class="line-through text-[#b0b0b0]">2599元</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[744px] mr-[14px] -mt-[614px] bg-[#ffffff] mb-[14px] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20609">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202410281157_6e91e1273cb084794dd8301ae6353159.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Xiaomi 15 定制版</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">卡光学 Summilux 高速镜头｜骁龙®8至尊版移动平台｜5400mAh 小米金沙江电池 小米澎湃OS 2</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">4999元</div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[744px] mr-[14px] bg-[#ffffff] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20191">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f2a2b0cbf65d5d0ba5c715b0215493b.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Xiaomi MIX Flip</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">4.01英寸多功能超大外屏|徕卡光学Summilux镜头|大师人像|第三代骁龙8|4780mAh 小米金沙江电池</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">5999元起</div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[992px] -mt-[614px] bg-[#ffffff] mb-[14px] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20425">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202409240917_17625f85b407e135e24ca728d021ca15.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Redmi Note 14 Pro+</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">第三代骁龙®7s</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">1899元起 <span class="line-through text-[#b0b0b0]">1999元</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-[234px] h-[300px] py-[20px] ml-[992px] bg-[#ffffff] hover:-translate-y-1 hover:duration-300 duration-200 hover:shadow-xl ">
+        <a class="" href="https://www.mi.com/shop/buy?product_id=20181">
+          <img class="w-[160px] h-[160px] mx-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202407181428_bcbd77c13f958f6acc18dee8899cb7a1.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div>
+            <div class="mx-[10px] mb-[2px] text-[14px] text-center">Xiaomi MIX Fold 4</div>
+            <div class="mx-[10px] mb-[10px] overflow-hidden w-[214px] h-[18px] text-[12px] text-[#b0b0b0] text-center">超轻薄四曲面机身|小米龙骨转轴2.0|全碳纤维支撑架构</div>
+            <div class="mx-[10px] mb-[14px] text-[#FF6700] text-center">8999元起</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 下面这个是上方的小文字 -->
+  <section class="bg-[#f5f5f5] my-[14px] h-[58px]">
+    <div class="w-[1226px] m-auto h-[58px]">
+      <div class="inline-block float-left text-[22px] font-[200] align-middle leading-[58px]">智能穿戴</div>
+      <div class="">
+        <span class="block float-right ml-[40px] h-[58px] w-32px; text-center hover:text-[#EA5D00] hover:underline">穿戴</span>
+        <span class="group relative block float-right ml-[40px] h-[58px] w-32px; ">
+          耳机
+          <!-- 下面是两个定位里的“耳机” -->
+          <div class=" group-hover:block absolute w-[978px] h-[614px] text-[0px] top-[72px] -left-[874px]">
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] mr-[14px] text-base mb-[14px]" href="https://www.mi.com/shop/buy?product_id=20139">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202410112149_8c1b7e0aa8f1aca565ca4da1b3f609e6.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center  h-[21px]">Redmi Buds 6 青春版</div>
+              <div class="mx-[10px] mb-[10px] text-[12] text-center overflow-hidden h-[18px] text-[#b0b0b0]">42dB深度主动降噪 | 双麦 AI通话抗风噪 | 12.4mm超大镀钛动圈</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">139元</div>
+            </a>
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] mr-[14px] text-base mb-[14px]" href="https://www.mi.com/shop/buy?product_id=20426">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202409252052_478e3626f4c809beb3e6d65cddbcc77b.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center h-[21px]">Redmi Buds 6</div>
+              <div class="mx-[10px] mb-[10px] text-[12px] text-[#b0b0b0] text-center overflow-hidden h-[18px]">旗舰双单元架构 | 49dB深度降噪 | 42h超长续航</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">199元</div>
+            </a>
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] mr-[14px] text-base mb-[14px]" href="https://www.mi.com/shop/buy?product_id=20159">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202407172252_14dde1819e157be030514edaddf0ead9.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center h-[21px]">Xiaomi Buds 5</div>
+              <div class="mx-[10px] mb-[10px] text-[12px] text-[#b0b0b0] text-center overflow-hidden h-[18px]">舒适无感佩戴｜高通全链路无损音频｜哈曼 AudioEFX 联合调音</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">699元</div>
+            </a>
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] text-base mb-[14px]" href="https://www.mi.com/shop/buy?product_id=20081">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ed30ba825d2c0a27f9c9867c6376e02.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center h-[21px]">Redmi Buds 6S</div>
+              <div class="mx-[10px] mb-[10px] text-[12px] text-[#b0b0b0] text-center overflow-hidden h-[18px]">14.2mm超大动圈单元 | 半入耳主动降噪 | 33小时超长续航</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">199元</div>
+            </a>
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] mr-[14px] text-base" href="https://www.mi.com/shop/buy?product_id=20007">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202405161349_af5d2bb2e50bf45ff23d766e49da6cc5.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center h-[21px]">Redmi Buds 6 活力版</div>
+              <div class="mx-[10px] mb-[10px] text-[12px] text-[#b0b0b0] text-center overflow-hidden h-[18px]">14.2mm超大动圈 | 内置五种调音模式 | 30小时长续航</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">99元</div>
+            </a>
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] mr-[14px] text-base" href="https://www.mi.com/shop/buy?product_id=19827">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202404091941_350d7e8fb99f243754861b986168c187.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center h-[21px]">Xiaomi 开放式耳机</div>
+              <div class="mx-[10px] mb-[10px] text-[12px] text-[#b0b0b0] text-center overflow-hidden h-[18px]">舒适稳固佩戴｜超线性发声单元｜独立防漏音系统</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">629元 <span class="line-through text-[#B0B0B0]">699元</span></div>
+            </a>
+            <a class="inline-block w-[234px] h-[300px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 bg-[#ffffff] mr-[14px] text-base" href="https://www.mi.com/shop/buy?product_id=19446">
+              <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202311292123_5f019eb3ce2987e60596f7a54630e44c.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+              <div class="mx-[10px] mb-[2px] text-[14px] font-[400] text-center h-[21px]">Redmi Buds 5 Pro</div>
+              <div class="mx-[10px] mb-[10px] text-[12px] text-[#b0b0b0] text-center overflow-hidden h-[18px]">同轴双单元 旗舰音质 | 52dB/4kHz 旗舰降噪 | 49ms 超低延迟</div>
+              <div class="mx-[10px] mb-[14px] text-[#ff6700] text-center h-[18px]">369元起 <span class="line-through text-[#b0b0b0]">399元</span></div>
+            </a>
+            <a class="inline-block w-[234px] h-[143px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 text-base mb-[14px] bg-[#ffffff] align-top" href="https://www.mi.com/shop/buy?product_id=19180">
+              <img class="inline-block h-[80px] w-[80px] float-right overflow-auto mt-[31px]" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202309211159_17fe0c43d4e970c047f2a69b73e15459.png?thumb=1&w=100&h=100&f=webp&q=90" alt="">
+              <div class="indent-4 mt-[31px]">Redmi Buds 5</div>
+              <div class="indent-4 text-[#FF6700]">179元</div>
+            </a>
+            <a class="inline-block w-[234px] h-[143px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200 text-base bg-[#ffffff] ml-[744px] -mt-[143px]" href="https://www.mi.com/shop/search?keyword=%E8%80%B3%E6%9C%BA">
+              <div class="float-left">
+                <span class="inline-block indent-4 mt-[31px]">浏览更多</span><br>
+                <span class="inline-block indent-4">耳机</span>
+              </div>
+              <div class="font-['font-awesome'] before:content-['&#xf061;'] border border-[2px] h-12 w-12 rounded-[50%] text-[#ff6700] float-right mt-[31px]"></div>
+            </a>
+        </span>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- 2/7 inline-block -->
+  <section class="bg-[#f5f5f5] text-[0px]">
+    <div class="w-[1226px] h-[614px] m-auto">  
+      <!-- 下面是左边最大的，两个定位里它不变 -->
+      <a class="inline-block text-base mr-[14px] w-[234px] h-[614px] hover:-translate-y-1 hover:shadow-xl duration-200 hover:duration-200" href="https://www.mi.com/shop/buy?product_id=19312">
+        <img class="w-[234px] h-[614px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d06749930da27e8e8248cc69fced088f.png?thumb=1&w=234&h=614&f=webp&q=90" alt="">
+      </a>
+      <!-- 耳机部分放在耳机内了 -->
+      <!-- 穿戴没有做 -->
+      </div>
+    </div>
+  </section>
+  
+  
+  
+<!-- 这个是第三部分上的小字 -->
+  <section class="bg-[#f5f5f5]">  <!-- 这个section元素是为了给3/7一个与页面等宽的背景 -->
+    <div class="w-[1226px] m-auto h-[58px]">  <!-- 这个div是用来让整体居中，通过定宽和margin-auto实现 -->
+      <div class="float-left text-[22px] font-200 mt-[18px]">笔记本 | 平板</div>  <!-- 左浮动 -->
+      <div class="float-right text-[14px] underline text-[#ff6700] mt-[36px]">热门</div>  <!-- 右浮动 -->
+    </div>
+  </section>
+  
+<!-- 3/7 position -->
+  <section class="bg-[#f5f5f5] h-[614px] min-w-[1226px]">  <!-- 同样是给一个与页面等宽的背景 -->
+    <div class="relative w-[1226px] m-auto">  <!-- 让其居中，并作为这部分各个元素的定位祖先 -->
+      <!-- 整体分为左上下三部分 -->
+      <a class="h-[614px] w-[234px] absolute mr-[14px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=10050070">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bd88fa683214713a6acb1afcf738b89c.png?thumb=1&w=234&h=614&f=webp&q=90" alt="">
+      </a>
+      <!-- 上面这个a标签只有一张图片并且与父元素宽高相等  -->
+      <div class="absolute left-[248px] h-[314px] w-[978px] text-[0px]">
+        <a class="inline-block h-[300px] w-[234px] mb-[14px] py-[14px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=20598">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202410281957_cef79555890f4b13bbe6939cb16692e0.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Xiaomi Pad 7 Pro</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">11.2英寸3.2K高清高刷屏 | 第三代骁龙8s 旗舰芯片 | HyperOS 2 </div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">2399元 <span class="line-through text-[#b0b0b0]">2499元</span></div>
+        </a>
+        <a class="inline-block h-[300px] w-[234px] mb-[14px] py-[14px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=20593">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202410281949_cf5a01c8f94f82f116d95e7d719bba7d.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Xiaomi Pad 7</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">11.2英寸3.2K高清高刷屏 | 第三代骁龙7+ 旗舰芯片 | HyperOS 2</div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">1999元起</div>
+        </a>
+        <a class="inline-block h-[300px] w-[234px] mb-[14px] py-[14px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=10050070">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5daddaa651568673e87eaf7c15ebd1cb.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Redmi Pad Pro系列</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">12.1英寸2.5K旗舰机大屏 | 10000mAh超大电池</div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">1499元起</div>
+        </a>
+        <a class="inline-block h-[300px] w-[234px] mb-[14px] py-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19655">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202402221350_8181b68062669419dcb35b42972021e3.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Xiaomi Pad 6S Pro 12.4</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">第二代骁龙8 旗舰处理器 | 小米澎湃OS</div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">2999元起</div>
+        </a>
+      </div>
+      <!-- 上面这个div是装上半部分的四个a元素，四个元素可以为行内元素，从左到右依次排列 -->
+      <div class="absolute left-[248px] top-[314px] w-[978px] h-[300px] text-[0px]">
+        <a class="inline-block h-[300px] w-[234px] mr-[14px] py-[20px] bg-[#ffffff] text-base hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19715">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202402211712_15046d7abe233750b635d0ff3a53ae02.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Redmi Book Pro 14 2024</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">65W 满血性能｜全新酷睿 Ultra 处理器</div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">4999元起 <span class="line-through text-[#b0b0b0]">5299元</span></div>
+        </a>
+        <a class="inline-block h-[300px] w-[234px] mr-[14px] py-[20px] bg-[#ffffff] text-base hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19709">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202402211658_f8e48c3ab022eede514cc6ef6412a48b.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Redmi Book Pro 16 2024</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">70W 狂暴性能｜3.1K 165Hz 高刷高亮屏</div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">6399元起</div>
+        </a>
+        <a class="inline-block h-[300px] w-[234px] mr-[14px] py-[20px] bg-[#ffffff] text-base hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=10050058">
+          <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202311281956_f87f4c37af45c2261e944f57d29e4a03.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+          <div class="mx-[10px] mb-[2px] h-[21px] text-[14px] font-400 text-center">Redmi Book 16 2024</div>
+          <div class="mx-[10px] mb-[10px] h-[18px] text-[12px] text-[#b0b0b0] text-center w-[234px] overflow-hidden">47W 满血性能 | 小米澎湃智联 | 旗舰硬核品质</div>
+          <div class="mx-[10px] mb-[14px] h-[21px] text-[#ff6700] text-center">3699元起</div>
+        </a>
+        <div class="inline-block ml-[744px] -mt-[300px] align-top">  <!-- 这个div是个行内元素，里面有两个a元素 -->
+          <a class="relative block w-[234px] h-[143px] mb-[14px] text-base pt-[50px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200 bg-[#ffffff]" href="https://www.mi.com/shop/buy?product_id=10050057">
+            <div class="w-[94px] h-[42px] whitespacing-pre ml-[30px]">Redmi Book 14 2024</div>
+            <div class="w-[94px] h-[42px] ml-[30px] text-[#ff6700]">4299元起</div>
+            <img class="h-[80px] w-[80px] absolute top-[40px] right-[10px]" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202311281948_e41396e545d3ba8da294444a47abb590.png?thumb=1&w=100&h=100&f=webp&q=90" alt="">
+          </a>
+          <a class="relative block w-[234px] h-[143px] mb-[14px] text-base hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200 bg-[#ffffff]" href="">
+            <div class="ml-[30px] pt-[50px]">
+              <span class="w-[95px] h-[45px]">浏览更多</span><br>
+              <span class="w-[95px] h-[45px] text-[12px] text-[#757575] ">热门</span>
+            </div>
+            <div class="font-['font-awesome'] before:content-['&#xf061;'] border h-6 w-6 border-[#ff6700] rounded-[50%] text-[#ff6700] absolute top-[50px] right-[30px]"></div>
+          </a>
+        </div>
+      </div>
+      <!-- 上面这个div是装下半部分的五个元素，前三个是a元素，后两个是div。依然使用行内元素 -->
+    </div>
+  </section>
+  
+  
+  
+<!-- 4/7 float -->
+<!-- 把4/7上面的小字一起包进来，给整体一个背景，就不会因为margin的存在使得背景有空隙 -->
+  
+  <section class="bg-[#F5F5F5]">  <!-- 与页面等宽，用于给背景 -->
+    <!-- 下面这部分是4/7上面的小字 -->
+    <div class="w-[1226px] m-auto h-[58px]">  <!-- 定宽 margin=auto -->
+      <div class="float-left text-[22px] font-200 leading-[58px]">家电</div>
+      <!-- 这第一个div左浮动 -->
+      <div class="float-right leading-[58px]">
+        <!-- 第二个div右浮动，里面三个行内元素 -->
+        <span class="text-[16px] hover:text-[#ff6700] hover:underline">热门</span>
+        <span class="text-[16px] hover:text-[#ff6700] hover:underline">电视影音</span>
+        <span class="text-[16px] hover:text-[#ff6700] hover:underline">空调</span>
+      </div>
+    </div>
+  
+    <!-- 下面这部分是4/7的主体 -->
+    <div class="w-[1226px] m-auto h-[614px] overflow-auto">  <!-- 主体分成左右两部分，右半部分再分上下两部分，这三部分使用float，里面使用行内块元素（但左边部分内部还要用浮动） -->
+      <div class="float-left h-[614px] w-[234px] mr-[14px] overflow-auto">  <!-- 左半部分 -->
+        <a class="float-top" href="https://www.mi.com/shop/buy?product_id=10050068">
+          <img class="h-[300px] w-[234px] mb-[14px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71a8e491a39b9c246246140fe68d256b.jpg?thumb=1&w=234&h=300&f=webp&q=90" alt="">
+        </a>
+        <a class="float-bottom" href="https://www.mi.com/mijia-wash-dryers/clean-pro-10kg">
+          <img class="h-[300px] w-[234px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/46a738e1b375a08dd691a43bb05767f9.png?thumb=1&w=234&h=300&f=webp&q=90" alt="">
+        </a>
+      </div>
+      <div class="float-right h-[614px] w-[978px] overflow-auto">  <!-- 右半部分 -->
+        <div class="float-top h-[300px] w-[978px] mb-[14px] text-[0px] overflow-auto">
+          <a class="inline-block h-[300px] w-[234px] py-[20px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=10050030">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c95135c31082640c8f42f9a61966b635.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">小米电视S系列</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">144HZ超高刷  3+32G   多色温色彩还原技术</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">2599元起</div>
+          </a>
+          <a class="inline-block h-[300px] w-[234px] py-[20px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=10050050">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/086a234cdcc9234c236b1b744ab2df68.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">小米电视S Pro Mini LED系列</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">144Hz超高刷、4+64G大存储</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">4999元起</div>
+          </a>
+          <a class="inline-block h-[300px] w-[234px] py-[20px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=10050068">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202403131610_4c436d462d84b5109080ccf6b632844c.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">小米电视 S Mini LED 系列</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">Mini LED 高分区背光、1200nits峰值亮度</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">2999元起</div>
+          </a>
+          <a class="inline-block h-[300px] w-[234px] py-[20px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=13143">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/21429638bdd453e8c1cb5c357ff4835b.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">巨省电 小米空调 1.5匹新1级能效</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">强劲制冷 | 高效节能 | 智能互联</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">2199元 <span class="line-through text-[#B0B0B0]">2499元</span></div>
+          </a>
+        </div>
+        <div class="float-bottom h-[300px] w-[978px] text-[0px] overflow-auto">
+           <a class="inline-block h-[300px] w-[234px] py-[20px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=15657">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9cd8a5a447b4f84faeb3791811a179f9.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">米家新风空调 立式3匹</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">全屋快通风，就要大新风</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">5999元起 <span class="line-through text-[#B0B0B0]">7299元</span></div>
+          </a>
+           <a class="inline-block h-[300px] w-[234px] py-[20px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=13815">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/db032eeb9e8efe9551161ee18bf70d3f.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">米家波轮洗衣机 10kg</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">全景玻璃阻尼上盖 防夹手</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">999元 <span class="line-through text-[#B0B0B0]">1499元</span></div>
+          </a>
+           <a class="inline-block h-[300px] w-[234px] py-[20px] mr-[14px] text-base bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=12882">
+            <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202212131701_80db3da0f97aeb6b724039a4c5a24dd7.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+            <div class="leading-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">米家迷你波轮洗衣机Pro 3kg</div>
+            <div class="leading-[18px] text-[12px] text-[#b0b0b0] text-center overflow-hidden mx-[10px] mb-[10px] h-[18px]">高温煮洗 杀菌除螨</div>
+            <div class="leading-[21px] text-[14px] text-[#ff6700] mx-[10px] mb-[14px] text-center">799元起 <span class="line-through text-[#B0B0B0]">1599元</span></div>
+          </a>
+          <div class="inline-block h-[300px] w-[234px] text-base align-bottom overflow-auto">
+            <div class="inline-block h-[143px] w-[234px] mb-[14px] float-top align-top pt-[50px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200">
+              <img class="h-[80px] w-[80px] float-right overflow-auto -mt-[20px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/608a47f5d655fc1372de67ee2f7b1c43.jpg?thumb=1&w=100&h=100&f=webp&q=90" alt="">
+              <div class="w-[94px] h-[42px] ml-[10px] mb-[10px]">米家冰箱无霜两门186L</div>
+              <div class="w-[94px] h-[21px] ml-[10px] text-center text-[#ff6700]">1199元</div>
+            </div>
+            <div class="inline-block h-[143px] w-[234px] mb-[14px] float-bottom align-bottom bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200">
+              <div class="text-[18px] pt-[50px] w-[94px] h-[45px]">浏览更多 <br><span class="text-[12px] text-[#757575]">热门</span></div>
+              <div class="float-right overflow-auto h-8 w-8 border rounded-[50%] border-[#ff6700] border-[2px] font-['font-awesome'] before:content-['&#xf061;']"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+  
+  
+  
+  
+  <!-- 5/7 flex -->
+  <!-- 下面这个是5/7上面的小字 -->
+  <section class="bg-[#F5F5F5]"> <!-- 给定背景 -->
+    <div class="w-[1226px] m-auto h-[48px]">  <!-- 定宽居中 -->
+      <div class="float-left text-[22px] font-200 leading-[48px]">生活电器</div>  <!-- 左浮动 -->
+      <div class="float-right leading-[48px]">  <!-- 右浮动，行内元素 -->
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">风扇</span>
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">扫地机</span>
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">空净</span>
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">清洁</span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 5/7主体部分 -->
+  <section class="bg-[#f5f5f5]">  <!-- 给定背景 -->
+    <div class="w-[1226px] h-[614px] m-auto flex flex-col flex-wrap overflow-auto">  <!-- 定宽居中 -->
+      <a class="" href="https://www.mi.com/shop/buy?product_id=19773">
+        <img class="h-[300px] w-[234px] mr-[14px] mb-[14px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/644966333bed3ed0323ae3f7086baa72.jpg?thumb=1&w=234&h=300&f=webp&q=90" alt="">
+      </a>
+      <a class="" href="https://www.mi.com/shop/buy?product_id=16572">
+        <img class="h-[300px] w-[234px] mr-[14px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/23ea3bb9378ff3a7fc65b57731730576.jpg?thumb=1&w=234&h=300&f=webp&q=90" alt="">
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] mb-[14px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19773">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202403221728_bb09314672ebb191d2a6eee63dcb09b1.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家全能扫拖机器人 M30 S </div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">机械臂贴边清洁，毛发实时防缠绕</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">2599元 <span class="line-through text-[#b0b0b0]">3699元</span></div>
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=18652">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202307260056_e9953630b3f39fa0825313bfd5bef057.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家全能扫拖机器人2</div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">托管式智能扫拖，一机包揽全屋地面清洁</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">1999元 <span class="line-through text-[#b0b0b0]">3499元</span></div>
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] mb-[14px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19476">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202311251129_94eabb38d397de731c90cd014b104afd.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家全能扫拖机器人M30 Pro</div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">创新「毛发切割」，AI高能扫拖清洁</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">2799元 <span class="line-through text-[#b0b0b0]">4699元</span></div>
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=16552">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202209201505_51fd440d528e6a509d1fc2d3be2b8492.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家全能扫拖机器人 1S </div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">智能语音召唤，清洁动口不动手</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">2599元 <span class="line-through text-[#b0b0b0]">3999元</span></div>
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] mb-[14px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=18387">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202304201532_de6f38151ff0489f2017296a66710d5a.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家免洗扫拖机器人 2</div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">扫、吸、拖、洗四合一的清洁助手</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">1799元 <span class="line-through text-[#b0b0b0]">2499元</span></div>
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=18649">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202307211847_1c77463c39e656ec5478b8af16fdac5d.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家扫拖机器人 3C增强版</div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">家庭地面清洁优选</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">1099元 <span class="line-through text-[#b0b0b0]">1299元</span></div>
+      </a>
+      <a class="py-[20px] inline-block h-[300px] w-[234px] mb-[14px] bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19934">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202404221604_0dd9a284c241ef9ac5f87a1ad842774d.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 mx-[10px] mb-[2px] text-center">米家全能扫拖机器人 M30</div>
+        <div class="h-[18px] text-[12px] mx-[10px] mb-[10px] overflow-hidden text-[#B0B0B0] text-center">三重激光避障，7000Pa超大吸力</div>
+        <div class="h-[21px] text-[14px] mx-[10px] mb-[14px] text-center text-[#ff6700]">1799元 <span class="line-through text-[#b0b0b0]">3299元</span></div>
+      </a>
+      <a class="inline-block h-[143px] w-[234px] bg-[#ffffff] pt-[50px] flex justify-between hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="">
+        <div class="w-[94px] h-[42px] ml-[10px]">浏览更多<br> <span class="text-[12px] text-[#757575]">扫地机</span></div>
+        <div class="font-['font-awesome'] before:content-['&#xf061;'] border border-[2px] border-[#ff6700] rounded-[50px] h-8 w-8 mr-[10px] text-[#ff6700]"></div>
+      </a>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  <!-- 6/7 grid -->
+  <!-- 下面是6/7上面的小字 -->
+  <section class="bg-[#F5F5F5]">  <!-- 给定背景 -->
+    <div class="w-[1226px] m-auto h-[48px] overflow-auto">  <!-- 定宽居中 -->
+      <div class="float-left leading-[48px] text-[18px] font-400 ">厨房电器</div>  <!-- 左浮动 -->
+      <div class="float-right leading-[48px]">
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">净水器</span>
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">烟灶</span>
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">电饭煲</span>
+        <span class="ml-[10px] hover:text-[#ff6700] hover:underline">微蒸烤</span>
+      </div>  <!-- 右浮动 -->
+    </div>
+  </section>
+  
+  <!-- 下面是6/7主体部分 -->
+  <section class="bg-[#f5f5f5]">  <!-- 给定背景 -->
+    <div class="w-[1226px] m-auto h-[614px] grid grid-cols-5 gap-[14px] grid-rows-4">  <!-- 定宽居中 -->
+      <a class="row-span-2 bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=20331">
+        <img class="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/499abd2f37095463c677a09f55cb2074.jpg?thumb=1&w=234&h=300&f=webp&q=90" alt="">
+      </a>
+      <a class="row-span-2 bg-[#ffffff] py-[20px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=16549">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202209201443_41fb0bb47d46874e982822c1b6e14b07.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">米家净水器1600G</div>
+        <div class="h-[18px] text-[12px] text-center overflow-hidden text-[#b0b0b0] mx-[10px] mb-[10px]">2.1秒一杯水，还原自来水的澎湃流速</div>
+        <div class="h-[21px] text-[14px] text-center text-[#ff6700] mx-[10px] mb-[14px]">2299元 <span class="line-through text-[#b0b0b0]">3499元</span></div>
+      </a>
+      <a class="row-span-2 bg-[#ffffff] py-[20px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=14896">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1c5909c8e91f871efaf94e2159b6f85e.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">小米即热净水器Q600</div>
+        <div class="h-[18px] text-[12px] text-center overflow-hidden text-[#b0b0b0] mx-[10px] mb-[10px]">净热一体，1秒速热，精选调温每1℃</div>
+        <div class="h-[21px] text-[14px] text-center text-[#ff6700] mx-[10px] mb-[14px]">2099元 <span class="line-through text-[#b0b0b0]">3499元</span></div>
+      </a>
+      <a class="row-span-2 bg-[#ffffff] py-[20px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=12965">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6594e9856ed024575434d7d81d86e868.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">小米净水器H600G</div>
+        <div class="h-[18px] text-[12px] text-center overflow-hidden text-[#b0b0b0] mx-[10px] mb-[10px]">纯净生活双出水，六级过滤健康直饮</div>
+        <div class="h-[21px] text-[14px] text-center text-[#ff6700] mx-[10px] mb-[14px]">1099元 <span class="line-through text-[#b0b0b0]">1499元</span></div>
+      </a>
+      <a class="row-span-2 bg-[#ffffff] py-[20px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=15838">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dc7c9f2277e5181fc3d3ee2320246f26.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">米家净水器1000G</div>
+        <div class="h-[18px] text-[12px] text-center overflow-hidden text-[#b0b0b0] mx-[10px] mb-[10px]">澎湃大水量，5年免换RO滤芯</div>
+        <div class="h-[21px] text-[14px] text-center text-[#ff6700] mx-[10px] mb-[14px]">1399元 <span class="line-through text-[#b0b0b0]">1999元</span></div>
+      </a>
+      <a class="row-span-2 bg-[#ffffff] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=19939">
+        <img class="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0e7310eb9e74b138865f32bf8a35c98e.jpg?thumb=1&w=234&h=300&f=webp&q=90" alt="">
+      </a>
+      <a class="row-span-2 bg-[#ffffff] py-[20px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=15547">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f924ad94c8c598766a0d60bee5ca7006.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">小米即热净水器Q800</div>
+        <div class="h-[18px] text-[12px] text-center overflow-hidden text-[#b0b0b0] mx-[10px] mb-[10px]">净水速热二合一</div>
+        <div class="h-[21px] text-[14px] text-center text-[#ff6700] mx-[10px] mb-[14px]">2199元 <span class="line-through text-[#b0b0b0]">2499元</span></div>
+      </a>
+      <a class="row-span-2 bg-[#ffffff] py-[20px] hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200" href="https://www.mi.com/shop/buy?product_id=16024">
+        <img class="h-[160px] w-[160px] m-auto" src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205211919_7f0456d9b7b282c920292d2206cc1ee4.png?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        <div class="h-[21px] text-[14px] font-400 text-center mx-[10px] mb-[2px]">米家净水器1200G</div>
+        <div class="h-[18px] text-[12px] text-center overflow-hidden text-[#b0b0b0] mx-[10px] mb-[10px]">澎湃出水 高端净水新选择</div>
+        <div class="h-[21px] text-[14px] text-center text-[#ff6700] mx-[10px] mb-[14px]">1699元 <span class="line-through text-[#b0b0b0]">1999元</span></div>
+      </a>
+      <a class="bg-[#ffffff]  hover:-translate-y-1 hover:shadow-xl hover:duration-200 duration-200 pt-[50px]" href="">
+        <div class="w-[94px] h-[42px] ml-[10px]">浏览更多<br><span class="text-[12px] text-[#757575]">净水器</span></div>
+        <div class="font-['font-awesome'] before:content-['&#xf061;'] border border-[2px] h-6 w-6 border-[#ff6700] text-[#ff6700] rounded-[50%] float-right mr-[10px] -mt-[30px]"></div>
+      </a>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <!-- 小米巨能写笔 给一个背景 一个定宽居中 一个图片 -->
+  <section class="bg-[#f5f5f5]">  <!-- 给定背景 -->
+    <a class="w-[1226px] h-[120px] m-auto " href="https://www.mi.com/shop/buy?product_id=9836">  <!-- 定宽居中 -->
+      <img class="h-[120px] min-w-[1226px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1226&h=120&f=webp&q=90" alt="">
+    </a>
+  </section>
+  
+  <!-- footer-1/2 最下边的内容分两大部分，第一部分又分上下两部分 -->
+  <section class="bg-[#ffffff]">  <!-- 给定背景 -->
+    <div class="w-[1226px] h-[480px] m-auto  bg-[#ffffff]">  <!-- 定宽居中 -->
+      <div class="h-[80px] w-[1226px] py-[27px] text-[0px] border-b border-[#616161]  bg-[#ffffff]">
+        <!-- 第一个div是上半部分 -->
+        <a class="inline-block text-base text-[#616161] hover:text-[#ff6700] w-[245px] leading-[17px] text-center border-r border-[#616161] font-['font-awesome'] before:content-['&#xf0ad;'] before:text-[#616161]" href="https://www.mi.com/service/aftersale/front"> 预约维修服务</a>
+        <a class="inline-block text-base text-[#616161] hover:text-[#ff6700] w-[245px] leading-[17px] text-center border-r border-[#616161] font-['font-awesome'] before:content-['⑺'] before:text-[#616161]" href="https://www.mi.com/service/exchange#back"> 7天无理由退货</a>
+        <a class="inline-block text-base text-[#616161] hover:text-[#ff6700] w-[245px] leading-[17px] text-center border-r border-[#616161] font-['font-awesome'] before:content-['⒂'] before:text-[#616161]" href="https://www.mi.com/service/exchange#back"> 15天免费换货</a>
+        <a class="inline-block text-base text-[#616161] hover:text-[#ff6700] w-[245px] leading-[17px] text-center border-r border-[#616161] font-['font-awesome'] before:content-['&#xf1fd;'] before:text-[#616161]" href="https://www.mi.com/service/buy/Postal%20policy"> 满69包邮</a>
+        <a class="inline-block text-base text-[#616161] hover:text-[#ff6700] w-[245px] leading-[17px] text-center font-['font-awesome'] before:content-['&#xf041;'] before:text-[#616161]" href="https://www.mi.com/service/sitelist"> 1100余家售后网点</a>
+      </div>
+      <div class="relative py-[40px] h-[400px] w-[1226px]  bg-[#ffffff]">
+        <!-- 第二个div是下半部分 -->
+        <div class="w-[976px] h-[320px] px-[38px] flex  bg-[#ffffff]">  <!-- 下半部分的左半边 -->
+          <div class="w-[160px] h-[320px]">
+            <div class="block indent-8 text-[14px] text-[#424242] mb-[26px]">选购指南</div>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">手机</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">电视</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">平板</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">1</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">2</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">3</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">4</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">5</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">6</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">7</a>
+          </div>
+          <div class="w-[160px] h-[320px]">
+            <div class="block indent-8 text-[14px] text-[#424242] mb-[26px]">服务中心</div>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">申请售后</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">售后政策</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">维修服务价格</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">1</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">2</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">3</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">4</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">5</a>
+          </div>
+          <div class="w-[160px] h-[320px]">
+            <div class="block indent-8 text-[14px] text-[#424242] mb-[26px]">线下门店</div>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">小米之家</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">1</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">2</a>
+          </div>
+          <div class="w-[160px] h-[320px]">
+            <div class="block indent-8 text-[14px] text-[#424242] mb-[26px]">关于小米</div>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">1</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">2</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">3</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">4</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">5</a>
+          </div>
+          <div class="w-[160px] h-[320px]">
+            <div class="block indent-8 text-[14px] text-[#424242] mb-[26px]">关注我们</div>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">1</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">2</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">3</a>
+            <a class="block indent-8 text-[12px] text-[#757575] mt-[10px] hover:text-[#ff6700]" href="">4</a>
+          </div>
+        </div>
+        <div class="absolute top-[40px] right-[0px] bg-[#ffffff]">  <!-- 下半部分的右半边 -->
+          <div class="w-[250px] border-l border-[#616161]">
+            <div class="text-center text-[#ff6700] text-[22px]">400-100-5678</div>
+            <div class="text-center text-[12px] text-[#616161]">8:00-18:00（仅收市话费）</div>
+            <a class="block text-center mx-[65px] text-[#ff6700] text-[12px] leading-[28px] w-[120px] h-[30px] font-['font-awesome'] before:content-['&#xf0e6;'] border border-[#ff6700] hover:text-[#ffffff] hover:bg-[#ff6700]" href="https://account.xiaomi.com/fe/service/login?_group=DEFAULT&_locale=zh_CN&sid=kfs_chat&qs=%253Fcallback%253Dhttps%25253A%25252F%25252Fchat.kefu.mi.com%25252Fsts%25253Fsign%25253DuBgqDQwpdhzadLvGiVL3oDAh78w%2525253D%252526followup%25253Dhttps%2525253A%2525252F%2525252Fchat.kefu.mi.com%2525252Fpage%2525252Findex%2525252Fv2%2525253Ftag%2525253Dcn%25252526token%2525253DY24jMTAwMSNjbi53ZWIubWkuaHR0cHMjZGVmYXVsdCNnb29kc0RldGFpbA%252525253D%252525253D%25252526groupId%2525253DP0%25252526closedshow%2525253D1%2526sid%253Dkfs_chat%2526_locale%253Dzh_CN%2526_group%253DDEFAULT&callback=https%3A%2F%2Fchat.kefu.mi.com%2Fsts%3Fsign%3DuBgqDQwpdhzadLvGiVL3oDAh78w%253D%26followup%3Dhttps%253A%252F%252Fchat.kefu.mi.com%252Fpage%252Findex%252Fv2%253Ftag%253Dcn%2526token%253DY24jMTAwMSNjbi53ZWIubWkuaHR0cHMjZGVmYXVsdCNnb29kc0RldGFpbA%25253D%25253D%2526groupId%253DP0%2526closedshow%253D1&_sign=2AJTgFfpvfxW2sg4vA06ATzwAQQ%3D&serviceParam=%7B%22checkSafePhone%22%3Afalse%2C%22checkSafeAddress%22%3Afalse%2C%22lsrp_score%22%3A0.0%7D&showActiveX=false&theme=&needTheme=false&bizDeviceType=">人工客服</a>
+          </div>
+          <div class="w-[250px] ">
+            <div class="text-center text-[#ff6700] text-[22px]">400-180-8888</div>
+            <div class="text-center text-[12px] text-[#616161]">8:00-18:00（仅收市话费）</div>
+            <div class="text-center text-[12px] text-[#616161]">适用于：MIX FOLD、巨屏电视系列</div>
+            <a class="block text-center mx-[65px] text-[#ff6700] text-[12px] leading-[28px] w-[120px] h-[30px] font-['font-awesome'] before:content-['&#xf0e6;'] border border-[#ff6700] hover:text-[#ffffff] hover:bg-[#ff6700]" href="https://account.xiaomi.com/fe/service/login/password?_group=DEFAULT&_locale=zh_CN&sid=kfs_chat&qs=%253Fcallback%253Dhttps%25253A%25252F%25252Fchat.kefu.mi.com%25252Fsts%25253Fsign%25253DuBgqDQwpdhzadLvGiVL3oDAh78w%2525253D%252526followup%25253Dhttps%2525253A%2525252F%2525252Fchat.kefu.mi.com%2525252Fpage%2525252Findex%2525252Fv2%2525253Ftag%2525253Dcn%25252526token%2525253DY24jMTAwMSNjbi53ZWIubWkuaHR0cHMjZGVmYXVsdCNnb29kc0RldGFpbA%252525253D%252525253D%25252526groupId%2525253DP0%25252526closedshow%2525253D1%2526sid%253Dkfs_chat%2526_locale%253Dzh_CN%2526_group%253DDEFAULT&callback=https%3A%2F%2Fchat.kefu.mi.com%2Fsts%3Fsign%3DuBgqDQwpdhzadLvGiVL3oDAh78w%253D%26followup%3Dhttps%253A%252F%252Fchat.kefu.mi.com%252Fpage%252Findex%252Fv2%253Ftag%253Dcn%2526token%253DY24jMTAwMSNjbi53ZWIubWkuaHR0cHMjZGVmYXVsdCNnb29kc0RldGFpbA%25253D%25253D%2526groupId%253DP0%2526closedshow%253D1&_sign=2AJTgFfpvfxW2sg4vA06ATzwAQQ%3D&serviceParam=%7B%22checkSafePhone%22%3Afalse%2C%22checkSafeAddress%22%3Afalse%2C%22lsrp_score%22%3A0.0%7D&showActiveX=false&theme=&needTheme=false&bizDeviceType=">人工客服</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- 下面是最后一部分 -->
+  <section class="bg-[#FAFAFA]">  <!-- 给定背景 -->
+    <div class="w-[1226px] m-auto flex">  <!-- 定宽居中 -->
+      <!-- 左边一个左浮动，右边一个div 下边一个div-->
+      <div class="overflow-auto"><img class="h-14 w-14" src="https://ts1.cn.mm.bing.net/th/id/R-C.ee7708b10ec398fc04f9b70ab87494ed?rik=XJhOLHf5Fx4JtQ&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f04-22%2f99603%2fwater_99603_698_698_.png&ehk=3%2fF%2fCyhWmO3E2UApIVMFGrHXSMMBahOMLq4Rr%2beVXE8%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+      <div class="grow">
+        <div class="h-[19px] leading-[18px] text-[12px] text-[#b0b0b0] text-[0px]">
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA1</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA2</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA3</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA4</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA5</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA6</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA7</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA8</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA9</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA10</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA11</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA12</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA13</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">AAA14</a>
+        </div>
+        <div class="h-[19px] leading-[18px] text-[12px] text-[#b0b0b0] text-[0px]">
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">BBB1</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">BBB2</a>
+          <a class="inline-block h-[19px] leading-[18px] text-[12px] text-[#757575] text-base border-r border-[#B0B0B0] px-1 hover:text-[#ff6700]" href="">BBB3</a>
+        </div>
+        <div class="">
+          <div>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+          </div>
+          <div>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+          </div>
+          <div>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+          </div>
+          <div>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+            <span class="inline-block leading-[18px] text-[12px] text-[#b0b0b0] hover:text-[#ff6700]">QQQWERT</span>
+          </div>
+        </div>
+    </div>
+    </div>
+      <div class="ml-14 h-[28px] mt-1 mb-4">
+        <a class="inline-block" href="https://search.szfw.org/cert/l/CX20120926001783002010">
+          <img class="" src="https://s01.mifile.cn/i/v-logo-2.png" alt="">  
+        </a>
+        <a class="inline-block" href="https://xyt.xinchacha.com/pcinfo?sn=523009637759455232&certType=6">
+          <img class="h-[28px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/icon3.png" alt="">  
+        </a>
+        <a class="inline-block" href="https://www.mi.com/service/buy/commitment/">
+          <img class="" src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">  
+        </a>
+        <a class="inline-block" href="https://webcert.cnmstl.net/cert/grade?sn=3af21034e35011eab3ea00163e068ceb">
+          <img class="h-[28px]" src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/d09fd891f7fda7f0c63ffb3d0588f5e3.png" alt="">  
+        </a>
+      </div>
+  </section>
+
+  <!-- 最后一行字 -->
+  <section class="bg-[#FAFAFA]">
+    <div class="w-[1226px] m-auto">
+      <div class="before:content-['让全球每个人都能享受科技带来的美好生活'] before:text-[12px] before:text-[#B0B0B6] text-center"></div>
+    </div>
+  </section>
+
+  
+  <!-- 右边栏 相对于页面不动 position -->
+    <div class="w-[82px] h-[450px] bg-[#ffffff] fixed right-[0px] bottom-[70px]">
+      <div class="relative h-[90px] w-[82px] pt-[10px] group">
+        <a href="h-[30px] w-[30px]">
+          <img class="h-[30px] w-[30px] mx-[26px] mx-[2.5px] mb-2" src="https://i8.mifile.cn/b2c-mimall-media/98a23aae70f25798192693f21c4d4039.png" alt="">
+        </a>
+        <a class="h-[30px] w-[30px]" href="">
+          <img class="hidden group-hover:block absolute top-[10px] left-[26px] h-[30px] w-[30px]" src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png" alt="">
+        </a>
+        <div id="a1" class="relative text-[14px] text-[#757575] text-center text-[#757575] group-hover:text-[#ff6700]">
+          手机APP
+          <div class="hidden absolute group-hover:block right-[90px] -top-[48px] w-[130px] h-[190px] bg-[#ffffff]">
+            <img class="h-[100px] w-[100px] mx-[15px] mt-[25px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/78c30d4f259ed43ab20e810a522a6249.png" alt="">
+            <div class="w-[82px] text-[#757575] mx-[24px] mt-[15px]">扫码领取新人百元礼包</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative h-[90px] w-[82px] pt-[10px] group">
+        <a href="h-[30px] w-[30px]">
+          <img class="h-[30px] w-[30px] mx-[26px] mx-[2.5px] mb-2" src="https://i8.mifile.cn/b2c-mimall-media/55cad219421bee03a801775e7309b920.png" alt="">
+        </a>
+        <a class="h-[30px] w-[30px]" href="">
+          <img class="hidden group-hover:block absolute top-[10px] left-[26px] h-[30px] w-[30px]" src="https://i8.mifile.cn/b2c-mimall-media/41f858550f42eb1770b97faf219ae215.png" alt="">
+        </a>
+        <div id="a2" class="text-[14px] text-[#757575] text-center text-[#757575] group-hover:text-[#ff6700]">个人中心</div>
+      </div>
+      <div class="relative h-[90px] w-[82px] pt-[10px] group">
+        <a href="h-[30px] w-[30px]">
+          <img class="h-[30px] w-[30px] mx-[26px] mx-[2.5px] mb-2" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12eb0965ab33dc8e05870911b90f3f13.png" alt="">
+        </a>
+        <a class="h-[30px] w-[30px]" href="">
+          <img class="hidden group-hover:block absolute top-[10px] left-[26px] h-[30px] w-[30px]" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/95fbf0081a06eec7be4d35e277faeca0.png" alt="">
+        </a>
+        <div id="a3" class="text-[14px] text-[#757575] text-center text-[#757575] group-hover:text-[#ff6700]">售后服务</div>
+      </div>
+      <div class="relative h-[90px] w-[82px] pt-[10px] group">
+        <a href="h-[30px] w-[30px]">
+          <img class="h-[30px] w-[30px] mx-[26px] mx-[2.5px] mb-2" src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png" alt="">
+        </a>
+        <a class="h-[30px] w-[30px]" href="">
+          <img class="hidden group-hover:block absolute top-[10px] left-[26px] h-[30px] w-[30px]" src="https://i8.mifile.cn/b2c-mimall-media/5e9f2b1b0da09ac3b3961378284ef2d4.png" alt="">
+        </a>
+        <div id="a4" class="text-[14px] text-[#757575] text-center text-[#757575] group-hover:text-[#ff6700]">人工客服</div>
+      </div>
+      <div class="relative h-[90px] w-[82px] pt-[10px] group">
+        <a href="h-[30px] w-[30px]">
+          <img class="h-[30px] w-[30px] mx-[26px] mx-[2.5px] mb-2" src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png" alt="">
+        </a>
+        <a class="h-[30px] w-[30px]" href="">
+          <img class="hidden group-hover:block absolute top-[10px] left-[26px] h-[30px] w-[30px]" src="https://i8.mifile.cn/b2c-mimall-media/692a6c3b0a93a24f74a29c0f9d68ec71.png" alt="">
+        </a>
+        <div id="a5" class="text-[14px] text-[#757575] text-center text-[#757575] group-hover:text-[#ff6700]">购物车</div>
+      </div>
+    </div>
+  
+  
+  
+
+</body>
+</html>
