@@ -13,21 +13,22 @@
     console.log(result)
 </script>
 
-<script type="ok" id="ch0103/03">
+<script type="ok
+" id="ch0103/03">
     var a = Number(prompt("请输入a"))
     var b = Number(prompt("请输入b"))
     var c = Number(prompt("请输入c"))
-    var result = (a + b) / c
+    var result = (a + b) / c - ((a + b) / c % 1)
     console.log(result)
 </script>
 
-<script type="ok" id="ch0103/04">
+<script type="" id="ch0103/04">
     var divisor = Number(prompt("请输入除数"))
     var dividend = Number(prompt("请输入被除数"))
     var remainder = divisor % dividend
     var quotient = (divisor - (divisor % dividend)) / dividend
-    console.log("整数商：" + quotient)
-    console.log("余数：" + remainder)
+    console.log(quotient)
+    console.log(remainder)
 </script>
 
 <script type="ok" id="ch0103/05">
@@ -51,13 +52,13 @@
     var d = Number(prompt("请输入d"))
     var x = Number(prompt("请输入x"))
     var result = a * (x ** 3) + b * (x ** 2) + c * x + d
-    console.log("f(x)=" + result)
+    console.log(result)
 </script>
 
 <script type="ok" id="ch0103/08">
     var F = Number(prompt("请输入华氏温度"))
     var C = (((5 * (F - 32) / 9) * (10 ** 5)) - ((5 * (F - 32) / 9) * (10 ** 5) % 1)) / (10 ** 5)
-    console.log("摄氏温度为 " + C)
+    console.log(C)
 </script>
 
 <script type="ok" id="ch0103/09">
@@ -65,15 +66,15 @@
     var R = 2 * r
     var c = 2 * r * 3.14159
     var s = r * r * 3.14159
-    console.log("直径是 " + R)
-    console.log("周长是 " + c)
-    console.log("面积是 " + s)
+    console.log(R)
+    console.log(c)
+    console.log(s)
 </script>
 
 <script type="ok" id="ch0103/10">
     var r1 = Number(prompt("请输入r1"))
     var r2 = Number(prompt("请输入r2"))
     var R = ( (1 / ( (1/r1) + (1/r2) )) * 100 - (1 / ( (1/r1) + (1/r2) )) * 100 % 1 ) / 100
-    console.log("并联电阻阻值为 " + R)
+    console.log(R)
 </script>
 
