@@ -1,0 +1,79 @@
+<script type="ok" id="ch0103/01">
+    var A = Number(prompt("请输入A"))
+    var B = Number(prompt("请输入B"))
+    var result = A + B
+    console.log(result)
+</script>
+
+<script type="ok" id="ch0103/02">
+    var a = Number(prompt("请输入A"))
+    var b = Number(prompt("请输入B"))
+    var c = Number(prompt("请输入C"))
+    var result = (a + b) * c
+    console.log(result)
+</script>
+
+<script type="ok" id="ch0103/03">
+    var a = Number(prompt("请输入a"))
+    var b = Number(prompt("请输入b"))
+    var c = Number(prompt("请输入c"))
+    var result = (a + b) / c
+    console.log(result)
+</script>
+
+<script type="ok" id="ch0103/04">
+    var divisor = Number(prompt("请输入除数"))
+    var dividend = Number(prompt("请输入被除数"))
+    var remainder = divisor % dividend
+    var quotient = (divisor - (divisor % dividend)) / dividend
+    console.log("整数商：" + quotient)
+    console.log("余数：" + remainder)
+</script>
+
+<script type="ok" id="ch0103/05">
+    var a = Number(prompt("请输入分子"))
+    var b = Number(prompt("请输入分母"))
+    var result = ( (a / b ) * 10000000000000000 - (a / b ) * 10000000000000000 % 10000000 ) / 10000000000000000
+    console.log(result)
+</script>
+
+<script type="ok" id="ch0103/06">
+    var a = Number(prompt("请输入确诊数"))
+    var b = Number(prompt("请输入死亡数"))
+    var result = ((( b / a ) * 100) * 10000000000000000 - (( b / a ) * 100) * 10000000000000000 % 10000000000000) / 10000000000000000
+    console.log(result + "%")
+</script>
+
+<script type="ok" id="ch0103/07">
+    var a = Number(prompt("请输入a"))
+    var b = Number(prompt("请输入b"))
+    var c = Number(prompt("请输入c"))
+    var d = Number(prompt("请输入d"))
+    var x = Number(prompt("请输入x"))
+    var result = a * (x ** 3) + b * (x ** 2) + c * x + d
+    console.log("f(x)=" + result)
+</script>
+
+<script type="ok" id="ch0103/08">
+    var F = Number(prompt("请输入华氏温度"))
+    var C = (((5 * (F - 32) / 9) * (10 ** 5)) - ((5 * (F - 32) / 9) * (10 ** 5) % 1)) / (10 ** 5)
+    console.log("摄氏温度为 " + C)
+</script>
+
+<script type="ok" id="ch0103/09">
+    var r = Number(prompt("请输入半径"))
+    var R = 2 * r
+    var c = 2 * r * 3.14159
+    var s = r * r * 3.14159
+    console.log("直径是 " + R)
+    console.log("周长是 " + c)
+    console.log("面积是 " + s)
+</script>
+
+<script type="ok" id="ch0103/10">
+    var r1 = Number(prompt("请输入r1"))
+    var r2 = Number(prompt("请输入r2"))
+    var R = ( (1 / ( (1/r1) + (1/r2) )) * 100 - (1 / ( (1/r1) + (1/r2) )) * 100 % 1 ) / 100
+    console.log("并联电阻阻值为 " + R)
+</script>
+
