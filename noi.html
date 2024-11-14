@@ -22,7 +22,7 @@
     console.log(result)
 </script>
 
-<script type="" id="ch0103/04">
+<script type="ok" id="ch0103/04">
     var divisor = Number(prompt("请输入除数"))
     var dividend = Number(prompt("请输入被除数"))
     var remainder = divisor % dividend
@@ -34,31 +34,33 @@
 <script type="ok" id="ch0103/05">
     var a = Number(prompt("请输入分子"))
     var b = Number(prompt("请输入分母"))
-    var result = ( (a / b ) * 10000000000000000 - (a / b ) * 10000000000000000 % 10000000 ) / 10000000000000000
+    var c = a / b
+    var result = c.toFixed(9)
     console.log(result)
 </script>
 
 <script type="ok" id="ch0103/06">
     var a = Number(prompt("请输入确诊数"))
     var b = Number(prompt("请输入死亡数"))
-    var result = ((( b / a ) * 100) * 10000000000000000 - (( b / a ) * 100) * 10000000000000000 % 10000000000000) / 10000000000000000
+    var c = (b / a) * 100
+    var result = c.toFixed(3)
     console.log(result + "%")
 </script>
 
 <script type="ok" id="ch0103/07">
+    var x = Number(prompt("请输入x"))
     var a = Number(prompt("请输入a"))
     var b = Number(prompt("请输入b"))
     var c = Number(prompt("请输入c"))
     var d = Number(prompt("请输入d"))
-    var x = Number(prompt("请输入x"))
-    var result = a * (x ** 3) + b * (x ** 2) + c * x + d
-    console.log(result)
+    var result = a * (x * x * x) + b * (x * x) + c * x + d
+    console.log(result.toFixed(7))
 </script>
 
 <script type="ok" id="ch0103/08">
     var F = Number(prompt("请输入华氏温度"))
-    var C = (((5 * (F - 32) / 9) * (10 ** 5)) - ((5 * (F - 32) / 9) * (10 ** 5) % 1)) / (10 ** 5)
-    console.log(C)
+    var C = 5 * (F - 32) / 9
+    console.log(C.toFixed(5))
 </script>
 
 <script type="ok" id="ch0103/09">
@@ -66,15 +68,27 @@
     var R = 2 * r
     var c = 2 * r * 3.14159
     var s = r * r * 3.14159
-    console.log(R)
-    console.log(c)
-    console.log(s)
+    console.log(R.toFixed(4))
+    console.log(c.toFixed(4))
+    console.log(s.toFixed(4))
 </script>
 
 <script type="ok" id="ch0103/10">
     var r1 = Number(prompt("请输入r1"))
     var r2 = Number(prompt("请输入r2"))
-    var R = ( (1 / ( (1/r1) + (1/r2) )) * 100 - (1 / ( (1/r1) + (1/r2) )) * 100 % 1 ) / 100
-    console.log(R)
+    var R = (1 / ( (1/r1) + (1/r2) ))
+    console.log(R.toFixed(2))
 </script>
 
+<script type="ok" id="ch0103/11">
+    var a = Number(prompt("请输入a"))
+    var b = Number(prompt("请输入b"))
+    var result = a % b 
+    console.log(result.toFixed(4))
+</script>
+
+<script type="ok" id="ch0103/12">
+    var r = Number(prompt("请输入半径"))
+    var V = (4 / 3) * 3.14 * r * r * r 
+    console.log(V.toFixed(2))
+</script>
