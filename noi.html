@@ -238,6 +238,15 @@
             console.log(0)
     }
 </script>
+<script type="ok" id="ch0104/07.5">
+    var a = Number(prompt("请输入幸运个数"))
+    var b = Number(prompt("请输入鼓励个数"))
+    if (a > 10 || b > 20) {
+        console.log(1)
+    } else {
+        console.log(0)
+    }
+</script>
 
 <script type="ok" id="ch0104/08">
     var n = Number(prompt("请输入n"))
@@ -248,6 +257,14 @@
             console.log("YES")
         else 
             console.log("NO")
+    }
+</script>
+<script type="ok" id="ch0104/08.5">
+    var n = Number(prompt("请输入n"))
+    if (n % 3 ==0 && n % 5 == 0) {
+        console.log("YES")
+    } else {
+        console.log("NO")
     }
 </script>
 
@@ -280,6 +297,26 @@
                 console.log("n")
         }
     }
+</script>
+<script type="ok" id="ch0104/09.5">
+    var n = Number(prompt("请输入n"))
+    var m = true
+    if (n % 3 == 0) {
+        console.log(3)
+        var m = false
+    }
+    if (n % 5 == 0) {
+        console.log(5)
+        var m = false
+    }
+    if (n % 7 == 0) {
+        console.log(7)
+        var m = false
+    }
+    if (m) {
+        console.log(n)
+    }
+
 </script>
 
 <script type="ok" id="ch0104/10">
@@ -480,4 +517,266 @@
     var y = Number(prompt("请输入y"))
     var a = n - (y / x)
     console.log(Math.floor(a))
+</script>
+
+<script type="ok" id="ch0105/01">
+    var n = Number(prompt("number"))
+    var sum = 0
+    var c = 0
+    while (n > c) {
+        var age = Number(prompt("age"))
+        sum = sum + age
+        c = c + 1
+    }
+    console.log((sum / n).toFixed(2))
+</script>
+
+<script type="ok"  id="ch0105/02">
+    var n = 12
+    var c = 0
+    var sum = 0
+    while (c < n) {
+        var remain = Number(prompt("remain"))
+        sum = sum + remain
+        c = c + 1
+    }
+    console.log("$" + (sum / n).toFixed(2))
+</script>
+
+<script type="ok" id="ch0105/03">
+    var n = Number(prompt("number"))
+    var sum = 0
+    var c = 0
+    while (c < n) {
+        var m = Number(prompt("样本"))
+        sum = sum + m
+        c = c + 1
+    }
+    result = sum / n
+    console.log(result.toFixed(4))
+</script>
+
+<script type="ok" id="ch0105/04">
+    var n = Number(prompt("number"))
+    var sum = 0
+    var c = 0
+    while (n > c) {
+        var m = Number(prompt("整数"))
+        sum = sum + m
+        c = c + 1
+    }
+    result = (sum / n).toFixed(5)
+    console.log(sum + " " + result)
+</script>
+
+<script type="ok" id="ch0105/05">
+    var n = Number(prompt("number"))
+    var max = 0
+    var c = 0
+    while (c < n) {
+        var score = Number(prompt("score"))
+        if (max < score) {
+            max = score
+        }
+        c = c + 1
+    }
+    console.log(max)
+</script>
+
+<script type="ok" id="ch0105/06">
+    var n = Number(prompt("number"))
+    var max = 0
+    var min = 1000
+    var c = 0
+    while (n > c) {
+        var m = Number(prompt("非负整数序列值"))
+        if (m > max) {
+            max = m
+        }
+        if (m < min) {
+            min = m
+        }
+        c = c + 1
+    }
+    console.log(max - min)
+</script>
+
+<script type="ok" id="ch0105/07">
+    var n = Number(prompt("days"))
+    var suma = 0
+    var sumb = 0
+    var sumc = 0
+    var m = 0
+    while (n > m) {
+        var a = Number(prompt("gold"))
+        var b = Number(prompt("silver"))
+        var c = Number(prompt("copper"))
+        suma = suma + a
+        sumb = sumb + b
+        sumc = sumc + c
+        m = m + 1
+    }
+    console.log(suma , sumb , sumc , suma + sumb + sumc)
+</script>
+
+<script type="ok" id="ch0105/08">
+    var n = Number(prompt("n边形"))
+    var sum = 0
+    var c = 1
+    while (n > c) {
+        var deg = Number(prompt("degree"))
+        sum = sum + deg
+        c = c + 1
+    }
+    result = (n - 2) * 180 - sum
+    console.log(result)
+</script>
+
+<script type="ok" id="ch0105/09">
+    var m = Number(prompt("m"))
+    var n = Number(prompt("n"))
+    var a = n - m
+    var sum = 0
+    var c = 0
+    while (a >= c) {
+        if (m % 2 !=0) {
+            sum = sum + m
+        } else sum = sum + m + 1
+        c = c + 2
+        m = m + 2
+    }
+    console.log(sum)
+</script>
+
+<script type="ok" id="ch0105/10">
+    var m = Number(prompt("m"))
+    var n = Number(prompt("n"))
+    var a = n - m
+    var sum = 0
+    var c = 0
+    while (a >= c) {
+        if (m % 17 == 0) {
+            sum = sum + m
+        }
+        c = c + 1
+        m = m + 1
+    }
+    console.log(sum)
+</script>
+
+<script type="ok" id="ch0105/11">
+    var k = Number(prompt("number"))
+    var c = 0
+    var o = 0
+    var p = 0
+    var q = 0
+    while (k > c) {
+        var n = Number(prompt("正整数"))
+        if (n == 1) {
+            o = o + 1
+        }
+        if (n == 5) {
+            p = p + 1
+        }
+        if (n == 10) {
+            q = q +1
+        }
+        c = c + 1
+    }
+    console.log(o,p,q)
+</script>
+
+<script type="ok" id="ch0105/12">
+    var N = Number(prompt("N"))
+    var m = Number(prompt("m"))
+    var c = 0
+    var count = 0
+    while (N > c) {
+        var a = Number(prompt("number"))
+        if (a == m) {
+            count = count + 1
+        }
+        c = c + 1
+    }
+    console.log(count)
+</script>
+
+<script type="ok" id="ch0105/13">
+    var a = Number(prompt("number"))
+    var n = Number(prompt("乘方"))
+    var c = 0
+    var b = a
+    while ((n - 1) > c) {
+        b = b * a
+        c = c + 1
+    }
+    console.log(b)
+</script>
+
+<script type="ok" id="ch0105/14">
+    var x = Number(prompt("number"))
+    var n = Number(prompt("years"))
+    var c = 0
+    while (n > c) {
+        x = x * 1.001
+        c = c + 1
+    }
+    console.log(x.toFixed(4))
+</script>
+
+<script type="ok" id="ch0105/15">
+    var r = Number(prompt("rate"))
+    var m = Number(prompt("money"))
+    var y = Number(prompt("year"))
+    var c = 0
+    while (y > c) {
+        m = m * (1 + r * 0.01)
+        c = c + 1
+    }
+    console.log(Math.floor(m))
+</script>
+
+<script type="ok" id="ch0105/16">
+    var n = Number(prompt("money"))
+    var k = Number(prompt('rate'))
+    var years = 1
+    var money = 200
+    var c = 0
+    while (n * years - (money *  (1 + k * 0.01) ** (years - 1)) <= 0) {
+        years = years + 1
+    }
+    if (years <= 20) {
+        console.log(years)
+    } else console.log("Impossible")
+</script>
+
+**斐波那契数列**
+<script type="ok" id="ch0105/17">
+    var k = Number(prompt("number"))
+    var n = 2
+    var c = 0
+    if (k = 1) n = 1
+    if (k = 2) n = 1
+    if (k > 2) {
+        while (k > c) {
+            n = n + 2
+            f(1)=1
+            f(2)=1
+            f(3)=2
+            f(4)=3
+            .
+            .
+            .
+            f(k) = f(k-1)+f(k-2)
+        }
+    }
+</script>
+
+<script id="ch0105/18">
+    var n = Number(prompt("行数"))
+    var c = 0
+    while (n > c) {
+        var a = Number(prompt("总病例"))
+        var b = Number(prompt("有效数"))
+    }
 </script>
