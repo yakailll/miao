@@ -752,43 +752,47 @@
 
 **斐波那契数列**
 <script type="ok" id="ch0105/17">
-    var k = Number(prompt("number"))
-    var n = 2
-    var c = 0
-    if (k = 1) n = 1
-    if (k = 2) n = 1
-    if (k > 2) {
-        while (k > c) {
-            n = n + 2
-            f(1)=1
-            f(2)=1
-            f(3)=2
-            f(4)=3
-            .
-            .
-            .
-            f(k) = f(k-1)+f(k-2)
-        }
+    var k = +prompt()
+    var a = 1
+    var b = 0
+    // 让a b分别等于1和0而不是1和1，是将a b放在数列第一个数1的左边，从而让c作为数列的第一个数即1
+    var c 
+    for (var i = 0 ; i < k ; i++) {
+        c = a + b // a b c 的顺序是 a b c
+        a = b 
+        b = c
+        // 这个是让a b 往后挪一位，即c=a+b也往后挪了一位
     }
+    console.log(c)
+</script>
+<script type="ok" id="ch0105/17.2">
+    // 只用两个变量实现上面三个变量的效果
+    var k = +prompt()
+    var a = 1
+    var b = 0
+    for (var i = 0 ; i < k ; i++) {
+        b = b + a
+        a = b - a
+        // 这个是让a b 往后挪一位，即c=a+b也往后挪了一位
+    }
+    console.log(b)
 </script>
 
 **鸡尾酒疗法**
 <script type="ok" id="ch0105/18">
-    var n = Number(prompt("行数"))
-    var count = 0
-    do {
-        var a = Number(prompt("总病例"))
-        var b = Number(prompt("有效数"))
-        var x = (b / a)* 100
-    } while (n - 1 < count) {
-        a = Number(prompt("总病例"))
-        b = Number(prompt("有效数"))
-        var y = (b / a)* 100
-        if (x - y > 5) {
-            console.log("worse")
-        } else if (y - x > 5) {
+    var n = +prompt()
+    var total = +prompt("鸡尾酒疗法总例数")
+    var effect = +prompt("鸡尾酒疗法的有效数")
+    var r = effect / total
+    for (var i = 1 ; i < n ; i ++) {
+        var t = +prompt()
+        var e = +prompt()
+        var thisr = +prompt()
+        if (thisr - r > 0.05) {
             console.log("better")
-        } else if (x - y < 5 || y - x < 5) {
+        } else if (r - thisr > 0.05) {
+            console.log("worse")
+        } else {
             console.log("same")
         }
     }
@@ -840,11 +844,13 @@
     var mouthmomall = 0
     var mouthjin = 0
     var mouthall = 0
+    var failed = true
     for (var i = 0; i < 12; i += 1) {
         var plan = +prompt("month money plan" + (i + 1))
         mouthall = mouthall + plan
         if (plan > 300 + mouthjin) {
             console.log("-" + (i + 1))
+            failed = false
         }
         mouthjin = mouthjin + 300 - plan
         if (mouthjin >= 100) {
@@ -855,7 +861,9 @@
         }
     }
     var result = 300 * 12 - mouthall-mouthmomall + mouthmomall * 1.2
-    console.log(result)
+    if (failed == true) {
+        console.log(result)
+    }
 </script>
 
 <script type="ok" id="ch0105/23">
@@ -892,9 +900,110 @@
     console.log(max)
 </script>
 
-<script id="ch0105/25">
-    var n = number()
-    while (n >= 10 && n <= 99) {
-        var a = n % 7 
+**七进制 九进制**
+<script type="ok" id="ch0105/25">
+    debugger
+    for (var n = 10 ; n <= 99 ; n++) {
+        var c = n % 7 //  七进制的第三位
+        var b = ((n - (n % 7)) / 7 ) % 7 //  七进制的第二位
+        var a = ((n - (n % 7)) / 7 - b) / 7 //  七进制的第一位
+
+        var z = n % 9 //  九进制的第三位
+        var y = ((n - (n % 9)) / 9) % 9 //  九进制的第二位
+        var x = ((n - (n % 9)) / 9 - y) / 9 //  九进制的第一位
+
+        if (x == c && y == b && z == a) {
+            console.log(n)
+        }
     }
 </script>
+
+<script type="ok" id="ch0105/26">
+    var n = +prompt()
+    var count = 0
+    for (var i = 0 ; i < n ; i++) {
+        var m = +prompt()
+        var a = m % 10  // 个位
+        var b = (m % 100 - a) / 10  // 十位
+        var c = (m % 1000 - m % 100) / 100  // 百位
+        var d = (m - m % 1000) / 1000  // 千位
+        if (a - b - c - d > 0) {
+            count = count + 1
+        }
+    }
+    console.log(count)
+</script>
+
+<script type="ok" id="ch0105/27">
+    var k = +prompt()
+    var n = 1
+    var Sn = 0
+    while (n < 99999999999) {
+        Sn = Sn + 1 / n
+        if (Sn > k) {
+            console.log(n)
+            break
+        }
+        n = n + 1
+    }
+</script>
+
+<script type="ok" id="ch0105/28">
+    var n = +prompt()
+    var a // 个位
+    while (n >= 10) {
+        a = n % 10
+        n = (n - n % 10) / 10
+        console.log(a)
+    }
+    console.log(n)
+</script>
+
+<script type="ok" id="ch0105/29">
+    var n = +prompt()
+    var m = ""
+    while (n % 10 == 0) {
+        n = n / 10
+    }
+    while (n*n > 100) {
+        var a = n % 10
+        if (a < 0) {
+            m = m + (-a)
+        } else {
+            m = m + (a)
+        }
+        n = (n - a) / 10
+    }
+    if (n < 0) {
+        console.log("-" + m + (-n))
+    } else {
+        console.log(m + n)
+        }
+</script>
+
+<script type="ok" id="ch0105/30">
+    var m = +prompt()
+    var k = +prompt()
+    var count = 0
+    if (m % 19 == 0) {
+        while (m >= 3) {
+            var a = m % 10 //  最后一位
+            if (a == 3) {
+                count = count + 1
+            }
+            m = (m - a) / 10
+        }
+        if (count = k) {
+            console.log("YES")
+        } else {
+            console.log("NO")
+        }
+    } else {
+        console.log("NO")
+    }
+</script>
+
+**开关灯**
+<script id="ch0105/31">
+</script>
+
