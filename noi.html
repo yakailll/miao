@@ -1007,6 +1007,20 @@
 
 **开关灯**
 <script id="ch0105/31">
+    var n = +prompt()
+    var m = +prompt()
+    for (var i = 1 ; i <= n ; i++) {
+        var on = true // 灯是开着的
+        for (var j = 1 ; j <= m ; j++) {
+            if (i % j == 0) { // 说明第j个人需要操作一下第i个灯
+                on = !on // 灯的状态发生改变
+            }
+            // 循环结束就是左右人都操作完这个灯
+        }
+        if (on == false) {
+                console.log(i)
+            }
+    }
 </script>
 
 <script type="ok" id="ch0105/32">
@@ -1049,7 +1063,7 @@
 
 <script type="ok" id="ch0105/35">
     var n = +prompt()
-    var sum = 0
+    var sum = 1
     var a = 1
     for (var i = 1 ; i <= n ; i++) {
         a = (a * i)
@@ -1069,8 +1083,8 @@
     console.log(sum.toFixed(2))
 </script>
 
-<script id="ch0105/37">
-
+<script type="" id="ch0105/37">
+    // 不做
 </script>
 
 <script id="ch0105/38">
@@ -1160,11 +1174,39 @@
     var n = +prompt("质数的乘积")
     // 因为1不是质数，所以n也不是质数
     // 思路：用n循环去除质数，结果为质数，就再比较结果与所除的数的大小，输出较大的
-    
+
+    // 下面是大喵的答案
+    var n = +prompt()
+    for (var i = 2 ; i < n ; i++) {
+        if (n % i == 0) { // n 除以i能整除的话那么整除的结果就是答案
+            var answer = n / i 
+            console.log(answer)
+            break
+        }
+    }
 </script>
 
-<script id="ch0105/44">
-
+<script type="ok" id="ch0105/44">
+    var n = +prompt()
+    var count = 0
+    // 下面是判断是否是素数
+    for (var x = 2 ; ; x++) {
+        var isPrime = true
+        for (var y = 2 ; y <= x / 2 ; y++) { // 遍历从2到x的一半的所有数
+            if (x % y == 0) {
+                isPrime = false
+                break
+            }
+        }
+        // 下面是基本框架
+        if (isPrime) {
+            count++
+            if (count === n) {
+                console.log(x)
+                break
+            }
+        }
+    }
 </script>
 
 <script type="ok" id="ch0105/45">
