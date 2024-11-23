@@ -1226,15 +1226,18 @@
 
 <script type="ok" id="narcissistic">
     // 判断一个数是不是水仙花数（三位数，各个位上的数的三次幂的和等于它本身）
-    var n = +prompt("请输入一个三位数")
-    var isnarcissistic = false
-    var a = (n % 10) ** 3
-    var b = ((n - (n % 10)) / 10 % 10) ** 3
-    var c = ((n - (n % 100)) / 100) ** 3
-    if (n == a + b + c) {
-        isnarcissistic = true
+    var isNarcissistic = function(n) {
+        var a = (n % 10) ** 3
+        var b = ((n - (n % 10)) / 10 % 10) ** 3
+        var c = ((n - (n % 100)) / 100) ** 3
+        if (n == a + b + c) {
+            return "YES"
+        } else {
+            return "NO"
+        }
     }
-    console.log(isnarcissistic)
+    var x = +prompt()
+    isNarcissistic(x)
 </script>
 
 <script type="ok" id="narcissistics">
@@ -1252,26 +1255,27 @@
     }
 </script>
 
-<script type="ok" id="palindrom">
+<script type="OK" id="palindrom">
     // 判断是否是回文数
-    var n = +prompt()
-    var b = n
-    var sum = ""
-    ispalindrom = false
-    for (var i = 0 ; ; i++) {
-        var a = n % 10 
-        sum = sum + a
-        n = (n - n % 10) / 10
-        if (n == 0) {
-            break
+    var isPalindrom = function(n) {
+        var b = n
+            var sum = ""
+        for (var i = 0 ; ; i++) {
+            var a = n % 10 
+            sum = sum + a
+            n = (n - n % 10) / 10
+            if (n == 0) {
+                break
+            }
+        }
+        if (sum == b) {
+            return "YES"
+        } else {
+            return 'NO'
         }
     }
-    if (sum == b) {
-        ispalindrom = true
-        console.log(ispalindrom)
-    } else {
-        console.log(ispalindrom)
-    }
+    var x = +prompt()
+    isPalindrom(x)
 </script>
 
 <script id="weekday">
@@ -1279,21 +1283,23 @@
 
 <script type="ok" id="complete-number">
     // 判断一个数是不是完全数（数自身等于除自己以外所有约数的和）
-    var n = +prompt()
-    var sum = 0
-    var iscompletenumber = false
-    for (var i = 1 ; i < n ; i++) {
-        if (n % i == 0) {
-            sum += i
+    var isCompletenumber = function(n) {
+        var sum = 0
+        for (var i = 1 ; i < n ; i++) {
+            if (n % i == 0) {
+                sum += i
+            }
         }
+        if (n == sum) {
+            return "YES"
+        }
+        return "NO"
     }
-    if (n == sum) {
-        iscompletenumber = true
-    }
-    console.log(iscompletenumber)
+    var x = + prompt()
+    isCompletenumber(x)
 </script>
 
-<script type="ok" id="complete-numbers">
+<script type="" id="complete-numbers">
     // 输出1000以内的完全数
     var sum = 0
     for (var i = 1 ; i < 1000 ; i++) {
@@ -1311,18 +1317,20 @@
 
 <script type="ok" id="prime">
     // 判断一个数是不是素数（只能被1 和 自身整除）
-    var n = +prompt()
-    var count = 0
-    var isPrime = false
-    for (var i = 1 ; i <= n ; i++) {
-        if (n % i == 0) {
-            count++
+    var isPrime = function() {
+        var count = 0
+        for (var i = 1 ; i <= n ; i++) {
+            if (n % i == 0) {
+                count++
+            }
         }
+        if (count == 2) {
+            return "YES"
+        }
+            return "NO"
     }
-    if (count == 2) {
-        isPrime = true
-    }
-    console.log(isPrime)
+    var x = +prompt()
+    isPrime(x)
 </script>
 
 <script type="ok" id="primes">
@@ -1394,3 +1402,71 @@
     var sqrt = (a * 1000 - (a * 1000 % 1)) / 1000
     console.log(sqrt)
 </script>
+
+<script type="ok" id="ch3/作业1">
+    var 判断是否是素数 = function (x) {
+      var isPrime = true
+      for (var i = 2 ; i <= x / 2 ; i++) {
+        if (x % i == 0) {
+          isPrime = false
+          break
+        }
+      }
+      if (x == 1) {
+        isPrime = false
+      }
+      return isPrime
+    }
+  </script>
+
+  <script type="ok" id="ch3/作业1.2-大喵">
+    // 判断是否是整数
+    var isInteger = function(n) {
+        if (n - (n % 1) === 0) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    // 判断是否是素数
+    var isPrime = function (x) {
+        if (n < 0) {
+            return false
+        }
+        if (!isInteger) {
+            return false
+        }
+        for (var i = 2 ; i <= x / 2 ; i++) {
+        if (x % i == 0) {
+            return false
+        }
+        }
+        if (x == 1) {
+            return false
+        }
+        return true
+    }
+  </script>
+  
+  <script type="ok" id="ch3/作业2">
+    var 是否与7有关 = function(x) {
+      var relate = false
+      if (x % 7 == 0) {
+        relate = true
+      } else {
+        for (var i = 0 ; ; i++) {
+          x = (x - x % 7) / 10
+          if ( x % 7 == 0) {
+            relate = true
+            break
+          }
+          if (x == 0 ) {
+            break
+          }
+        }
+      }
+      return relate
+    }
+  </script>
+  
