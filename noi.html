@@ -1006,7 +1006,7 @@
 </script>
 
 **开关灯**
-<script id="ch0105/31">
+<script type="ok" id="ch0105/31">
     var n = +prompt()
     var m = +prompt()
     for (var i = 1 ; i <= n ; i++) {
@@ -1222,4 +1222,175 @@
             break
         }
     }
+</script>
+
+<script type="ok" id="narcissistic">
+    // 判断一个数是不是水仙花数（三位数，各个位上的数的三次幂的和等于它本身）
+    var n = +prompt("请输入一个三位数")
+    var isnarcissistic = false
+    var a = (n % 10) ** 3
+    var b = ((n - (n % 10)) / 10 % 10) ** 3
+    var c = ((n - (n % 100)) / 100) ** 3
+    if (n == a + b + c) {
+        isnarcissistic = true
+    }
+    console.log(isnarcissistic)
+</script>
+
+<script type="ok" id="narcissistics">
+    // 输入1000以内的水仙花数
+    // 只求出了三位数的水仙花数
+    var n 
+    for (var i = 100 ; i < 1000 ; i++) {
+        n = i
+        var a = (n % 10) ** 3
+        var b = ((n - (n % 10)) / 10 % 10) ** 3
+        var c = ((n - (n % 100)) / 100) ** 3
+        if (n == a + b + c) {
+            console.log(n)
+        }
+    }
+</script>
+
+<script type="ok" id="palindrom">
+    // 判断是否是回文数
+    var n = +prompt()
+    var b = n
+    var sum = ""
+    ispalindrom = false
+    for (var i = 0 ; ; i++) {
+        var a = n % 10 
+        sum = sum + a
+        n = (n - n % 10) / 10
+        if (n == 0) {
+            break
+        }
+    }
+    if (sum == b) {
+        ispalindrom = true
+        console.log(ispalindrom)
+    } else {
+        console.log(ispalindrom)
+    }
+</script>
+
+<script id="weekday">
+</script>
+
+<script type="ok" id="complete-number">
+    // 判断一个数是不是完全数（数自身等于除自己以外所有约数的和）
+    var n = +prompt()
+    var sum = 0
+    var iscompletenumber = false
+    for (var i = 1 ; i < n ; i++) {
+        if (n % i == 0) {
+            sum += i
+        }
+    }
+    if (n == sum) {
+        iscompletenumber = true
+    }
+    console.log(iscompletenumber)
+</script>
+
+<script type="ok" id="complete-numbers">
+    // 输出1000以内的完全数
+    var sum = 0
+    for (var i = 1 ; i < 1000 ; i++) {
+        for (var j = 1 ; j < i ; j++) {
+            if (i % j == 0) {
+                sum += j
+            }
+        }
+        if (i == sum) {
+            console.log(sum)
+        }
+        sum = 0
+    }
+</script>
+
+<script type="ok" id="prime">
+    // 判断一个数是不是素数（只能被1 和 自身整除）
+    var n = +prompt()
+    var count = 0
+    var isPrime = false
+    for (var i = 1 ; i <= n ; i++) {
+        if (n % i == 0) {
+            count++
+        }
+    }
+    if (count == 2) {
+        isPrime = true
+    }
+    console.log(isPrime)
+</script>
+
+<script type="ok" id="primes">
+    debugger
+    // 输出100以内的素数
+    var count = 0
+    for (var i = 1 ; i < 100 ; i++) {
+        for (var j = 1 ; j <= i ; j++) {
+            if (i % j == 0) {
+                count++
+            }
+        }
+        if (count == 2) {
+            console.log(i)
+        }
+        count = 0
+    }
+</script>
+
+<script type="ok" id="itob">
+    // 给定一个整数，将其转换为字符串
+    var n = +prompt()
+    var m // m+1就是n的位数
+    var sum = ""
+    for (var i = 0 ; ; i++) {
+        if (n / (10 ** i) - (n / (10 ** i) % 10) == 0) {
+            m = i
+            break
+        }
+    }
+    if (n - (n % 10) == 0) {
+        console.log("" + n)
+    } else {
+        for (var j = 0 ; ; j++) {
+        var a = (n - n % (10 ** m)) / (10 ** m) // a就是n的第一位数
+        sum += a // 目前最开始的一位数放在sum的前面
+        n = n % (10 ** m) // 剔除掉最开始的一位数
+        m--
+        if (n - (n % 10) == 0) {
+            console.log(sum + n)
+            break
+        }
+        }
+    }
+</script>
+
+<script type="ok" id="lcf&lcm">
+    // 输入两个数，输出它们的最大公约数和最小公倍数
+    var a = +prompt()
+    var b = +prompt()
+    var c = 0
+    for (var i = 1 ; i <= (a + b) / 2 ; i++) {
+        if (a % i == 0 && b % i == 0) {
+            if (i > c) {
+                c = i // c 就是最大公约数
+            }
+        }
+    }
+    console.log(c)
+    // 下面是求最小公倍数
+
+</script>
+
+<script type="ok" id="sqrt">
+    debugger
+    // 输入一个数，求它的平方根，精确到小数点后3位，不能使用Math.sqrt
+    var n = +prompt()
+    var a = n ** (1/2)
+    var sqrt = (a * 1000 - (a * 1000 % 1)) / 1000
+    console.log(sqrt)
 </script>
