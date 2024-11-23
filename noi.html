@@ -1231,9 +1231,9 @@
         var b = ((n - (n % 10)) / 10 % 10) ** 3
         var c = ((n - (n % 100)) / 100) ** 3
         if (n == a + b + c) {
-            return "YES"
+            console.log("YES")
         } else {
-            return "NO"
+            console.log("NO")
         }
     }
     var x = +prompt()
@@ -1255,7 +1255,7 @@
     }
 </script>
 
-<script type="OK" id="palindrom">
+<script type="ok" id="palindrom">
     // 判断是否是回文数
     var isPalindrom = function(n) {
         var b = n
@@ -1269,9 +1269,9 @@
             }
         }
         if (sum == b) {
-            return "YES"
+            console.log("YES")
         } else {
-            return 'NO'
+            console.log("NO")
         }
     }
     var x = +prompt()
@@ -1291,15 +1291,15 @@
             }
         }
         if (n == sum) {
-            return "YES"
+            console.log("YES")
         }
-        return "NO"
+            console.log("NO")
     }
     var x = + prompt()
     isCompletenumber(x)
 </script>
 
-<script type="" id="complete-numbers">
+<script type="ok" id="complete-numbers">
     // 输出1000以内的完全数
     var sum = 0
     for (var i = 1 ; i < 1000 ; i++) {
@@ -1317,7 +1317,7 @@
 
 <script type="ok" id="prime">
     // 判断一个数是不是素数（只能被1 和 自身整除）
-    var isPrime = function() {
+    var isPrime = function(n) {
         var count = 0
         for (var i = 1 ; i <= n ; i++) {
             if (n % i == 0) {
@@ -1325,9 +1325,9 @@
             }
         }
         if (count == 2) {
-            return "YES"
+            console.log("YES")
         }
-            return "NO"
+            console.log("NO")
     }
     var x = +prompt()
     isPrime(x)
