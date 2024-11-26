@@ -1239,6 +1239,18 @@
     var x = +prompt()
     isNarcissistic(x)
 </script>
+<script type="ok" id="narcissistic" class="damiao">
+    // 判断n的个数
+    function isNarcissistic (n) {
+        var width = 0
+        do { // 计算零
+            var ge = n % 10
+            n = (n - ge) / 10
+            width++
+        } while (n > 0)
+        return width
+    }
+</script>
 
 <script type="ok" id="narcissistics">
     // 输入1000以内的水仙花数
@@ -1278,7 +1290,59 @@
     isPalindrom(x)
 </script>
 
-<script id="weekday">
+<script type=" ok" id="weekday" class="damiao">
+    // 判断这一年是否是闰年
+    function isLeapYear (year) {
+        if (year % 400 == 0) {  // 如果是400的倍数就一定是闰年
+            return true
+        }
+        if (year % 100 == 0) {  // 如果不是400的倍数，但是100的倍数就不是闰年
+            return false
+        }
+        if (year % 4 == 0) {  // 
+            return true
+        }
+        return false
+    }
+    // 获取某年某月的天数
+    function getMonthDay(year,month) {
+        switch(month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31
+            case 2:
+                if (isLeapYear(year)) {
+                    return 29
+                } else {
+                    return 28
+                }
+            default:
+            return 30
+        }
+    }
+    // 计算从公元第一天到这个月的第一天的总天数
+    function weekday(year, month) {
+        var totalDays = 0 
+        for (var y = 1 ; y < year ; y++) { // 并不等于year，因为为止的那一年还没结束
+            if (isLeapYear(y)) {
+                totalDays += 366
+            } else {
+                totalDays += 365
+            }
+        }
+        // 上面的for循环（计算某月所在年份之前的年份一共多少天）可以替换成以下
+        // totalDays += (year - 1) * 365 + Math.floor((year - 1) / 4) - Math.floor((year -1) / 100) + Math.floor((year - 1) / 400)
+        // 这种算法是按照每年固定365天，再将闰年多的天数单独加上，不然会循环几千次
+        for (var m = 1 ; m < month ; m++) { // 同样并不等于montho
+            totalDays += getMonthDay(year, m)
+        }
+        return (totalDays + 1) % 7  // 以0123456表示周天周一...
+    }
 </script>
 
 <script type="ok" id="complete-number">
@@ -1375,6 +1439,49 @@
             console.log(sum + n)
             break
         }
+        }
+    }
+</script>
+<script type="ok" id="itob" class="damiao">
+    function itob (n) {
+        var result = ''
+        do {
+            var ge = n % 10
+            result = digit2str(ge) + result
+            n = (n - ge) / 10
+        } while (n > 0) 
+        return result
+    }
+    function digit2str (digit) { // 2 就是 to
+        if (digit == 0) {
+            return '0'
+        }
+        if (digit == 1) {
+            return '1'
+        }
+        if (digit == 2) {
+            return '2'
+        }
+        if (digit == 3) {
+            return '3'
+        }
+        if (digit == 4) {
+            return '4'
+        }
+        if (digit == 5) {
+            return '5'
+        }
+        if (digit == 6) {
+            return '6'
+        }
+        if (digit == 7) {
+            return '7'
+        }
+        if (digit == 8) {
+            return '8'
+        }
+        if (digit == 9) {
+            return '9'
         }
     }
 </script>
