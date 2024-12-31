@@ -1511,6 +1511,20 @@
     var sqrt = (a * 1000 - (a * 1000 % 1)) / 1000
     console.log(sqrt)
 </script>
+<script type="ok" id="sqrt" class="damiao">
+    // 利用牛顿法。
+    // 像 y = x² + n 这种抛物线上任何一点（x1，x1² + n）的切线等于 2*x1 （x1为这一点的横坐标）。  函数的导函数是函数的切线斜率
+    // 同时因为斜率还等于（x1² + n）/（x1 - x2），（x2，0）是这条切线与x轴的交点。
+    // 所以（x1² + n）/（x1 - x2）= 2 * x1，推导出 x2 = x1/2 + n/(2*x1)。
+    // 一般经过十次后的切线与x轴的交点已经很接近n的平方根了
+    function sqrt(n) { 
+        var x = n
+        for (var i = 0 ; i < 10 ; i++) {
+            x = x / 2 + n / (2 * x)
+        }
+        return x
+    }
+</script>
 
 <script type="ok" id="ch3/作业1">
     var 判断是否是素数 = function (x) {
