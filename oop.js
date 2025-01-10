@@ -14,17 +14,9 @@
   Vector.prototype.minus = function(m) {
     return new Vector(this.x - m.x, this.y - m.y)
   }
-  Vector.prototype.long = function() {
+  Vector.prototype.length = function() {
     return Math.sqrt(this.x * this.x + this.y * this.y)
   }
-  // 应用
-  var v1 = new Vector(1,2)
-  var v2 = new Vector(3,-4)
-
-  var v3 = v1.plus(v2)
-  var v4 = v2.minus(v1)
-
-  var l = v4.long()
 
 
 
@@ -37,42 +29,42 @@
   function Complex(real, imag) {
     // real 是实部，imag 是虚部
     // i ^ 2 = -1
-    this.a = real
-    this.b = imag
+    this.real = real
+    this.imag = imag
   }
   // 构造函数的原型属性
   Complex.prototype.plus = function(z) {
-    return new Complex(this.a + z.a, this.b + z.b)
+    return new Complex(this.real + z.real, this.imag + z.imag)
   }
   Complex.prototype.minus = function(z) {
-    return new Complex(this.a - z.a, this.b - z.b)
+    return new Complex(this.real - z.real, this.imag - z.imag)
   }
   Complex.prototype.multiple = function(z) {
-    return new Complex(this.a * z.a - this.b * z.b, this.a * z.b + this.b * z.a)
+    return new Complex(this.real * z.real - this.imag * z.imag, this.real * z.imag + this.imag * z.real)
   }
   Complex.prototype.div2 = function(z) {
-    var ac = this.a * z.a
-    var bd = this.b * z.b
-    var cc = z.a * z.a
-    var dd = z.b * z.b
-    var bc = this.b * z.a
-    var ad = this.a * z.b
+    var ac = this.real * z.real
+    var bd = this.imag * z.imag
+    var cc = z.real * z.real
+    var dd = z.imag * z.imag
+    var bc = this.imag * z.real
+    var ad = this.real * z.imag
     return new Complex(  (ac + bd)/(cc + dd) , (bc - ad)/(cc + dd)  )
   }
   Complex.prototype.div = function(z) {  // damiao 更简单
-    var helper = new Complex(z.a, -z.b)
-    var fenmu = z.multiple(helper).a
+    var helper = new Complex(z.real, -z.imag)
+    var fenmu = z.multiple(helper).real
     var fenzi = this.multiple(helper)
 
-    var a = fenzi.a / fenmu
-    var b = fenzi.b / fenmu
-    return new Complex(a,b)
+    var real = fenzi.real / fenmu
+    var imag = fenzi.imag / fenmu
+    return new Complex(real,imag)
   }
   Complex.prototype.toString2 = function() {
-    return (this.a + '') + "+" + (this.b + '') + "i"
+    return (this.real + '') + "+" + (this.imag + '') + "i"
   }
   Complex.prototype.toString = function() {  // damiao 减号的情况
-    return (this.a + '') + (this.b > 0 ? "+" : '') + (this.b + '') + "i"
+    return (this.real + '') + (this.imag > 0 ? "+" : '') + (this.imag + '') + "i"
   }
   // 应用
   var c1 = new Complex(4,5)
@@ -228,13 +220,11 @@ MySet.prototype.delete = function(val) {
   return this
 }
 // 获取集合中的元素用 c.size , 它是一个 getter
-MySet.prototype.size = function (val) {
   Object.defineProperty(MySet.prototype, "size", {
     get : function () {
       return this._elements.length
     }
   })
-}
 // 清空集合中的所有元素
 MySet.prototype.clear = function() {
   this._elements = []
