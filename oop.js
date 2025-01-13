@@ -1,3 +1,4 @@
+```
 // 向量
   // 构造函数
   function Vector(x,y) {
@@ -17,9 +18,6 @@
   Vector.prototype.length = function() {
     return Math.sqrt(this.x * this.x + this.y * this.y)
   }
-
-
-
 
 
 
@@ -386,3 +384,307 @@ Object.defineProperty(Queue.prototype, "size", {
   }
 })
 
+```
+
+// ES6 class 实现
+
+class Vector {
+  constructor(x,y) {
+    this.x = x
+    this.y = y
+  }
+  plus(m) {
+    return new Vector(this.x + m.x, this.y + m.y)
+  }
+  minus(m) {
+    return new Vector(this.x - m.x, this.y - m.y)
+  }
+  length() {
+    return Math.sqrt(this.x * this.x + this.y * this.y)
+  }
+}
+
+
+class Complex {
+  constructor(real,imag) {
+    this.real = real
+    this.imag = imag
+  }
+  plus(m) {
+    return new Complex(this.real + m.real, this.imag + m.imag)
+  }
+  minus(m) {
+    return new Complex(this.real - m.real, this.imag - m.imag)
+  }
+  multiple(m) {
+    return new Complex(  (this.real * m.real - this.imag * m.imag) , (this.real * m.imag + this.imag * m.real)  )
+  }
+  div(m) {
+    var helper = new Complex(z.real, -z.imag)
+    var fenmu = z.multiple(helper).real
+    var fenzi = this.multiple(helper)
+
+    var real = fenzi.real / fenmu
+    var imag = fenzi.imag / fenmu
+    return new Complex(real,imag)
+  }
+  toString() {
+    return (this.real + '') + (this.imag > 0 ? "+" : '') + (this.imag + '') + "i"
+  }
+}
+
+
+class LinkedList {
+  constructor() {
+    this._head = null
+    this._length = 0
+  }
+  at(idx) {
+    var p = this._head
+    while(idx > 0 && p) {
+      p = p.next
+      idx--
+    }
+    if (p) {
+      return p
+    } else {
+      return undefined
+    }
+  }
+  set(idx,val) {
+    var p = this._head
+    while(idx > 0 && p) {
+      p = p.next
+      idx--
+    }
+    if (p) {
+      p.val = val
+    } else {
+      return undefined
+    }
+  }
+  append(val) {
+    var p = this._head
+    this._length++
+    if (!p) {
+      p = {
+        val: val,
+        next: null,
+      }
+      return this
+    }
+    while(p.next) {
+      p = p.next
+    }
+    p.next = {
+      val:val,
+      next:null,
+    }
+    return this
+  }
+  pop() {
+    var p = this._head
+    if (!p) {
+      return undefined
+    }
+    p._length--
+    if (!p.next) {
+      var result = p.next.val
+      p = null
+      return result
+    }
+    while(p.next.next) {
+      p = p.next
+    }
+    var result = p.next.val
+    p = null
+    return result
+  }
+  prepend(val) {
+    var node = {
+      val: val,
+      next: this._head,
+    }
+    this._length++
+    this._head = node
+  }
+  shift() {
+    var p = this._head
+    if (!p) {
+      return undefined
+    }
+    this._length--
+    var result = p.val
+    p = p.next
+    return result
+  }
+  toArray() {
+    var p = this._head
+    var array = []
+    while(p) {
+      array.push(p.val)
+      p = p.next
+    }
+    return array
+  }
+  toString() {
+    return this.toArray().join("->")
+  }
+  get size() {
+    return this._length
+  }
+}
+
+
+class MySet {
+  constructor(initalValues) {
+    this._elements = []
+    for (var val of initalValues) {
+      if (!this._elements.includes(val)) {
+        this._elements.push(val)
+      }
+    }
+  }
+  add(val) {
+    if (!this._elements.includes(val)) {
+      this._elements.push(val)
+    }
+    return this
+  }
+  delete(val) {
+    var idx = this._elements.indexOf(val)
+    if (idx >= 0) {
+      this._elements.splice(idx,1)
+    }
+  }
+  get size() {
+    return this._elements.length
+  }
+  clear() {
+    this._elements = []
+  }
+  has(val) {
+    return this._elements.includes(val)
+  }
+  forEach(func) {
+    for(var val of this._elements) {
+      func(this._elements[val])
+    }
+  }
+}
+
+
+class MyMap {
+  constructor() {
+    this._pairs = []
+  }
+  set(key,val) {
+    for (var i = 0 ; i < array.length ; i += 2) {
+      if (this._pairs[i] === key) {
+        this._pairs[i + 1] = val
+        return this
+      }
+    }
+    this._pairs.push(key,val)
+    return this
+  }
+  get(key) {
+    for (var i = 0 ; i < this._pairs.length ; i += 2) {
+      if (this._pairs[i] === key) {
+        return this._pairs[i + 1]
+      }
+    }
+    return undefined
+  }
+  has(key) {
+    for (var i = 0 ; i < this._pairs.length ; i += 2) {
+      if (this._pairs[i] === key) {
+        return true
+      }
+    }
+    return false
+  }
+  clear() {
+    this._pairs = []
+    return this
+  }
+  delete(key) {
+    for (var i = 0 ; i < this._pairs.length ; i += 2) {
+      if (this._pairs[i] === key) {
+        this._pairs.splice(i,2)
+        return true
+      }
+    }
+    return false
+  }
+  get size() {
+    return this._pairs.length / 2
+  }
+  forEach(interator) {
+    for (var i = 0 ; i < this._pairs.length ; i += 2) {
+      interator(this._pairs[i],this._pairs[i + 1])
+    }
+  }
+}
+
+
+class Stack {
+  constructor() {
+    this._elements = []
+  }
+  add (val) {
+    this._elements.push(val)
+  }
+  pop () {
+    return this._elements.pop()
+  }
+  peek () {
+    return this._elements[this._elements.length - 1]
+  }
+  get size() {
+    return this._elements.length
+  }
+}
+
+
+class Queue {
+  constructor() {
+    this._head = null
+    this._tail = null
+    this._length = 0
+  }
+  add(val) {
+    var node = {
+      val: val,
+      next: null,
+    }
+    this._length++
+    if (this._head == null) {
+      this._head = this.tail = node
+      return this
+    }
+    this._tail.next = node
+    this._tail = node
+    return this
+  }
+  pop() {
+    if (this._head == null) {  // 没有结点
+      return undefined
+    }
+    this._length--
+    if (this._head == this._tail) {  // 只有一个结点
+      var result = this._head.val
+      this._head = this._tail = null
+      return result
+    }
+    var result = this._head.val  // 有两个及以上的结点
+    this._head = this._head.next
+    return result
+  }
+  peek() {
+    return this._head.val
+  }
+  get size() {
+    return this._length
+  }
+}
