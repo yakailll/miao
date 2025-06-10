@@ -23,8 +23,8 @@ var yakailll = function() {
 */
 
 
-"use strict"
 var yakailll = function() {
+  "use strict"
   // 将 array 分块，每块 size 个
   function chunk(array, size = 1) { // chunk 块
     // 空数组或者数组长度小于 size
